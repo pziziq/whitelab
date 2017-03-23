@@ -1,0 +1,1627 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ko" lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+<title></title>
+<style>
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	padding: 0;
+	margin: 0;
+}
+#header .secNavWrap {
+	width: 100%;
+	height: 47px;
+	border-top: 1px solid #dfdfdf;
+	border-bottom: 4px solid #ff6600;
+	background: #fff;
+	z-index: 10000;
+}
+#header {
+	width: 100%;
+	margin-bottom: 13px;
+}
+#wrap {
+	width: 100%;
+}
+.monMain #wrap {
+	background: url(/monimg/main/point/bg_brand_wrap.gif) repeat-x 0 560px;
+}
+body {
+	font: 12px gulim, "굴림", dotum, "돋움", arial, sans-serif;
+	color: #494949;
+}
+html {
+	_overflow-y: scroll;
+	_overflow-x: auto;
+	height: 100%;
+}
+a {
+	font-size: 12px;
+	text-decoration: none;
+}
+a:link {
+	color: #494949;
+	text-decoration: none;
+}
+#header .secNavWrap .albamonIcon {
+	display: block !important;
+	position: absolute;
+	left: -200px;
+	top: 5px;
+	font-size: 1.6em;
+	font-weight: bold;
+	color: #ff6633;
+	-webkit-transition: left 300ms linear;
+	-moz-transition: left 300ms linear;
+	-ms-transition: left 300ms linear;
+	-o-transition: left 300ms linear;
+	transition: left 300ms linear;
+	z-index: 9999;
+}
+#header .secNavWrap .secNav {
+	width: 960px;
+	margin: -1px auto 0 auto;
+	clear: both;
+	*zoom:1: ;
+	height: 51px;
+}
+#header .secNavWrap .secNav::after {
+	display: block;
+	content: " ";
+	clear: both;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-size: 100%;
+}
+#accessibility, .skip, legend, .blind {
+	overflow: hidden;
+	position: absolute;
+	top: -5000em;
+	visibility: hidden;
+	width: 1px;
+	height: 1px;
+	line-height: 0;
+	font-size: 0px;
+}
+ol, ul, li {
+	list-style: none;
+}
+#header .secNavWrap .secNav .gMenu {
+	float: left;
+	position: relative;
+	z-index: 1005;
+}
+#header .secNavWrap .secNav .subNav {
+	float: right;
+	position: relative;
+	z-index: 1010;
+}
+#header .secNavWrap .secNav .subNav li.sNavLi {
+	float: left;
+}
+#header .secNavWrap .secNav .subNav li.sNavLi a.m {
+	display: block;
+	width: 65px;
+	height: 51px;
+	padding: 0 0 0 35px;
+	font: bold 15px "맑은고딕", "Malgun Gothic", Dotum, "돋움", sans-serif;
+	line-height: 42px;
+	background: url(/monimg/gnb/gnb_icon_1.gif) no-repeat 0 0;
+	letter-spacing: -1px;
+	color: #000;
+}
+#header .secNavWrap .secNav .subNav li.an a.m {
+	width: 85px;
+	background: url(/monimg/gnb/gnb_icon_1.gif) no-repeat 0 -208px;
+}
+.layerAn {
+	overflow: hidden;
+}
+.subNav .an .layerAn {
+	position: absolute;
+	top: 51px;
+	right: 0px;
+	width: 958px;
+	border: 1px solid #57493e;
+	background: #fff;
+	z-index: 1010;
+}
+.layerAn .anLeft {
+	float: left;
+	width: 760px;
+	border-right: 1px solid #d4d4d4;
+}
+.layerAn .anRight {
+	float: right;
+	width: 197px;
+}
+.layerAn .etcNav {
+	clear: both;
+	padding: 8px 0 0 28px;
+	height: 29px;
+	border-top: 1px solid #ede9e6;
+	background: #f9f9f9;
+}
+button {
+	overflow: visible;
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	background: transparent;
+	cursor: pointer;
+}
+.layerAn .btnClose {
+	display: inline-block;
+	position: absolute;
+	bottom: 12px;
+	right: 10px;
+	width: 14px;
+	height: 13px;
+	background: url(/monimg/gnb/topmenu_new/bg_gnb_all.gif) no-repeat -43px -142px;
+	text-indent: -9999em;
+}
+.layerGj h4 a {
+	color: #000 !important;
+	font-family: "Malgun Gothic","맑은 고딕",dotum, "돋움" ,sans-serif;
+	font-size: 16px;
+}
+.layerGi h4 a {
+	color: #000 !important;
+	font-family: "Malgun Gothic","맑은 고딕",dotum, "돋움" ,sans-serif;
+	font-size: 16px;
+}
+.gMenu .gi .layerGi a, .gMenu .sp .layerSp a, .gMenu .gj .layerGj a, .gMenu .gg .layerGg a, .gMenu .tk .layerTk a, .gMenu .tu .layerTu a, .gMenu .tc .layerTc a, .subNav .an .layerAn a {
+	color: #6d6d6d;
+	letter-spacing: -1px;
+	line-height: 130%;
+}
+img {
+	border: 0;
+	vertical-align: top;
+}
+.layerAn .etcNav a img {
+	padding: 0 0 1px 0;
+	vertical-align: middle;
+}
+.layerAn .anNav5 {
+	width: 185px;
+	margin: 23px 0 23px 18px;
+}
+.layerAn .anNav6 {
+	float: left;
+	width: 185px;
+	margin: 0 0 23px 0;
+}
+.layerAn h4 {
+	padding: 0 0 6px 0;
+	font-weight: bold;
+	letter-spacing: -1px;
+	background: none;
+}
+.layerAn .anNav6 h4 {
+	padding: 0 0 5px 18px;
+}
+.layerAn .anNav6 dl {
+	width: 161px;
+	margin: 0 0 0 18px;
+}
+.layerAn .anNav6 p.appBtn {
+	width: 161px;
+	border-top: 1px solid #d0d7df;
+	margin: 0 0 0 18px;
+	padding: 20px 0 0 0;
+	text-align: center;
+}
+.layerAn .anNav6 dl dt {
+	width: 152px;
+	padding: 11px 0 9px 9px;
+	border-top: 1px solid #d0d7df;
+	border-bottom: 1px solid #e7ecf0;
+	font: 11px dotum, "돋움", sans-serif;
+	color: #353638;
+	background: #fbfcff;
+}
+.layerAn .anNav6 dl dd {
+	position: relative;
+	height: 50px;
+	font-family: dotum, "돋움" ,sans-serif;
+}
+.layerAn .anNav6 dl dd .num {
+	position: absolute;
+	bottom: 5px;
+	left: 10px;
+	color: #ff6633;
+}
+.layerAn .anNav6 dl dd .price1 {
+	position: absolute;
+	bottom: 24px;
+	right: 12px;
+	text-decoration: line-through;
+	color: #ff0000;
+}
+.layerAn .anNav6 dl dd .price2 {
+	position: absolute;
+	bottom: 6px;
+	right: 12px;
+	color: #38383b;
+}
+address, caption, em {
+	font-weight: normal;
+	font-style: normal;
+}
+.layerAn .anNav6 dl dd .price2 em {
+	font-family: "Malgun Gothic","맑은 고딕",dotum, "돋움" ,sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+.layerAn .anNav6 dl dd .num em {
+	font-family: "Malgun Gothic","맑은 고딕",dotum, "돋움" ,sans-serif;
+	font-weight: bold;
+	font-size: 28px;
+}
+.layerAn .anNav1 ul li, .layerAn .anNav2 ul li, .layerAn .anNav3 ul li, .layerAn .anNav4 ul li, .layerAn .anNav5 ul li {
+	height: 18px;
+	padding: 0px 0 0px 8px;
+	background: url(/monimg/gnb/icon_spot_1.gif) no-repeat 0 6px;
+	line-height: 18px;
+}
+.layerAn .anLeft .anMain {
+	clear: both;
+	border-top: 1px solid #d4d4d4;
+}
+.layerAn .anNavBx1 {
+	float: left;
+	width: 270px;
+	border-right: 1px solid #e6e6e6;
+}
+.layerAn .anNavBx2 {
+	float: left;
+}
+.layerAn .anNavBx2 .tit {
+	width: 440px;
+	height: 48px;
+	margin: 0 0 20px 24px;
+	border-bottom: 1px solid #e5e5e5;
+	text-align: center;
+	font-weight: bold;
+	font-family: "Malgun Gothic","맑은 고딕",dotum, "돋움" ,sans-serif;
+	font-size: 16px;
+	color: #02ba92;
+}
+.layerAn .anNav2 {
+	float: left;
+	width: 130px;
+	height: 470px;
+	margin: 0 25px 0 24px;
+	border-right: 1px solid #f1f1f1;
+}
+.layerAn .anNav3 {
+	float: left;
+	width: 130px;
+	height: 470px;
+	margin-right: 25px;
+	border-right: 1px solid #f1f1f1;
+}
+.layerAn .anNav4 {
+	float: left;
+	width: 140px;
+	height: 470px;
+}
+.layerAn h4.loc {
+	padding: 18px 0 5px 0;
+}
+.layerAn .anNavBx2 .tit span {
+	display: inline-block;
+	height: 48px;
+	line-height: 48px;
+	padding-left: 30px;
+	background: url(/monimg/gnb/gnb_icon_1.gif) no-repeat left -648px;
+}
+.layerAn .anNavBx1 .tit {
+	width: 219px;
+	height: 48px;
+	margin: 0 0 20px 24px;
+	border-bottom: 1px solid #e5e5e5;
+	text-align: center;
+	font-weight: bold;
+	font-family: "Malgun Gothic","맑은 고딕",dotum, "돋움" ,sans-serif;
+	font-size: 16px;
+	color: #ff6633;
+}
+.layerAn .anNav1 {
+	margin-left: 24px;
+	height: 470px;
+}
+.layerAn h4 img {
+	position: relative;
+	top: -1px;
+	margin-left: 3px;
+}
+.layerAn .anNavBx1 .tit span {
+	display: inline-block;
+	height: 48px;
+	line-height: 48px;
+	padding-left: 30px;
+	background: url(/monimg/gnb/gnb_icon_1.gif) no-repeat left -600px;
+}
+.layerAn .anLeft .anTop .ad {
+	float: left;
+}
+#header .secNavWrap .secNav .subNav li.rs a.m {
+	width: 85px;
+	background: url(/monimg/gnb/gnb_icon_1.gif) no-repeat 0 0;
+}
+#header .secNavWrap .secNav .gMenu li.navLi {
+	float: left;
+}
+#header .secNavWrap .secNav .gMenu li.navLi a.m {
+	display: block;
+	width: 100px;
+	height: 51px;
+	padding: 0 5px 0 0;
+	font: bold 15px "맑은고딕", "Malgun Gothic", Dotum, "돋움", sans-serif;
+	line-height: 44px;
+	text-align: center;
+	color: #141414;
+	background: url(/monimg/gnb/gnb_icon_1.gif) no-repeat right -415px;
+	letter-spacing: -1px;
+}
+#header .secNavWrap .secNav .gMenu li.tc a.m {
+	width: 96px;
+}
+.layerTc {
+	overflow: hidden;
+	padding: 16px 0 0 0;
+}
+.gMenu .tc .layerTc {
+	position: absolute;
+	top: 51px;
+	left: 0px;
+	width: 958px;
+	border: 1px solid #57493e;
+	background: #fff;
+	z-index: 1010;
+}
+.layerTc .tcNav1 {
+	float: left;
+	width: 190px;
+	height: 178px;
+	margin: 0 0 20px 0;
+	border-right: 1px solid #e9e9e9;
+}
+.layerTc .tcNav2 {
+	float: left;
+	width: 190px;
+	margin: 0 0 20px 0;
+	border-right: 1px solid #e9e9e9;
+}
+.layerTc .tcNav3 {
+	float: left;
+	width: 190px;
+	height: 178px;
+	margin: 0 0 20px 0;
+	border-right: 1px solid #e9e9e9;
+}
+.layerTc .tcNav4 {
+	float: left;
+	width: 190px;
+	height: 178px;
+	margin: 0 0 20px 0;
+	border-right: 1px solid #e9e9e9;
+}
+.layerTc .tcNav5 {
+	float: left;
+	width: 190px;
+	height: 178px;
+}
+.layerTc .etcNav {
+	clear: both;
+	padding: 6px 0 0 38px;
+	height: 32px;
+	border-top: 1px solid #ede9e6;
+	background: #f9f9f9;
+	font-family: "Malgun Gothic","맑은 고딕",dotum, "돋움" ,sans-serif;
+	font-size: 15px;
+}
+.layerTc .btnClose {
+	display: inline-block;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 14px;
+	height: 13px;
+	background: url(/monimg/gnb/topmenu_new/bg_gnb_all.gif) no-repeat -43px -142px;
+	text-indent: -9999em;
+}
+.layerTc .etcNav a img {
+	margin-bottom: 4px;
+	vertical-align: middle;
+}
+.layerTc h4 {
+	padding: 0 0 7px 24px;
+	etter-spacing: -1px;
+	background: none;
+	font-weight: normal;
+	font-family: "Malgun Gothic","맑은 고딕",dotum, "돋움" ,sans-serif;
+	font-size: 16px;
+	color: #000;
+}
+.layerTc .tcNav1 ul li, .layerTc .tcNav2 ul li, .layerTc .tcNav3 ul li, .layerTc .tcNav4 ul li, .layerTc .tcNav5 ul li {
+	margin-left: 25px;
+	padding: 2px 0 2px 8px;
+	background: url(/monimg/gnb/topmenu_new/bg_gnb_all.gif) no-repeat 0 -163px;
+	line-height: 1.3;
+}
+#header .secNavWrap .secNav .gMenu li.tu a.m {
+	width: 95px;
+}
+.layerTu {
+	overflow: hidden;
+	padding: 16px 0 0 0;
+}
+.gMenu .tu .layerTu {
+	position: absolute;
+	top: 51px;
+	left: 0px;
+	width: 958px;
+	border: 1px solid #57493e;
+	background: #fff;
+	z-index: 1010;
+}
+.layerTu .tuNav1 {
+	float: left;
+	width: 190px;
+	height: 132px;
+	margin: 0 0 20px 0;
+	border-right: 1px solid #e9e9e9;
+}
+.layerTu .tuNav2 {
+	float: left;
+	width: 190px;
+	height: 132px;
+	margin: 0 0 20px 0;
+	border-right: 1px solid #e9e9e9;
+}
+.layerTu .tuNav3 {
+	float: left;
+	width: 190px;
+	height: 132px;
+	margin: 0 0 20px 0;
+	border-right: 1px solid #e9e9e9;
+}
+.layerTu .tuNav4 {
+	float: left;
+	width: 190px;
+	height: 132px;
+	margin: 0 0 20px 0;
+	border-right: 1px solid #e9e9e9;
+}
+.layerTu .tuNav5 {
+	float: left;
+	width: 190px;
+	height: 132px;
+}
+.layerTu .etcNav {
+	clear: both;
+	padding: 6px 0 0 38px;
+	height: 32px;
+	border-top: 1px solid #ede9e6;
+	background: #f9f9f9;
+	font-family: "Malgun Gothic","맑은 고딕",dotum, "돋움" ,sans-serif;
+	font-size: 15px;
+}
+.layerTu .btnClose {
+	display: inline-block;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 14px;
+	height: 13px;
+	background: url(/monimg/gnb/topmenu_new/bg_gnb_all.gif) no-repeat -43px -142px;
+	text-indent: -9999em;
+}
+.layerTu .etcNav a img {
+	margin-bottom: 4px;
+	vertical-align: middle;
+}
+.layerTu h4 {
+	padding: 0 0 7px 24px;
+	etter-spacing: -1px;
+	font-weight: normal;
+	background: none;
+	font-family: "Malgun Gothic","맑은 고딕",dotum, "돋움" ,sans-serif;
+	font-size: 16px;
+	color: #000;
+}
+.layerTu .tuNav1 ul li, .layerTu .tuNav2 ul li, .layerTu .tuNav3 ul li, .layerTu .tuNav4 ul li, .layerTu .tuNav5 ul li {
+	margin-left: 25px;
+	padding: 2px 0 2px 8px;
+	background: url(/monimg/gnb/topmenu_new/bg_gnb_all.gif) no-repeat 0 -163px;
+	line-height: 1.3;
+}
+#header .secNavWrap .secNav .gMenu li.gg a.m {
+	width: 79px;
+}
+.layerGg {
+	padding: 16px 0 0 0;
+}
+.gMenu .gg .layerGg {
+	position: absolute;
+	top: 51px;
+	width: 180px;
+	border: 1px solid #57493e;
+	background: #fff;
+	z-index: 1010;
+}
+.layerGg .layInner {
+	overflow: hidden;
+	_zoom: 1;
+	margin: 0 0 20px 0;
+}
+.layerGg .btnClose {
+	display: inline-block;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 14px;
+	height: 13px;
+	background: url(/monimg/gnb/topmenu_new/bg_gnb_all.gif) no-repeat -43px -142px;
+	text-indent: -9999em;
+}
+.layerGg .layInner .ggNav1 {
+	float: left;
+	width: 190px;
+	height: 140px;
+}
+.layerGg h4 {
+	padding: 0 0 7px 24px;
+	etter-spacing: -1px;
+	background: none;
+	font-weight: normal;
+	font-family: "Malgun Gothic","맑은 고딕",dotum, "돋움" ,sans-serif;
+	font-size: 16px;
+	color: #000;
+}
+.layerGg .layInner .ggNav1 ul li, .layerGg .layInner .ggNav2 ul li, .layerGg .layInner .ggNav3 ul li, .layerGg .layInner .ggNav4 ul li, .layerGg .layInner .ggNav5 ul li {
+	margin-left: 25px;
+	padding: 2px 0 2px 8px;
+	background: url(/monimg/gnb/icon_spot_1.gif) no-repeat 0 6px;
+	line-height: 1.3;
+}
+#header .secNavWrap .secNav .gMenu li.tk a.m {
+	width: 81px;
+}
+.layerTk {
+	overflow: hidden;
+	padding: 16px 0 0 0;
+}
+.gMenu .tk .layerTk {
+	position: absolute;
+	top: 51px;
+	width: 645px;
+	border: 1px solid #57493e;
+	background: #fff;
+	z-index: 1010;
+}
+#header .secNavWrap .secNav .gMenu li.tk .layerTk {
+	background: #fff;
+}
+.layerTk .tkNav1 {
+	float: left;
+	width: 160px;
+	height: 200px;
+	margin: 0 0 20px 0;
+	border-right: 1px solid #e9e9e9;
+}
+.layerTk .tkNav2 {
+	float: left;
+	width: 160px;
+	height: 200px;
+	margin: 0 0 20px 0;
+	border-right: 1px solid #e9e9e9;
+}
+.layerTk .tkNav3 {
+	float: left;
+	width: 160px;
+	height: 200px;
+	margin: 0 0 20px 0;
+	border-right: 1px solid #e9e9e9;
+}
+.layerTk .tkNav4 {
+	float: left;
+	width: 160px;
+	height: 200px;
+}
+.layerTk .etcNav {
+	clear: both;
+	padding: 6px 0 0 38px;
+	height: 32px;
+	border-top: 1px solid #ede9e6;
+	background: #f9f9f9 url(/monimg/gnb/topmenu_new/bg_gnb_all.gif) no-repeat 15px -184px;
+	font-family: "Malgun Gothic","맑은 고딕",dotum, "돋움" ,sans-serif;
+	font-size: 15px;
+}
+.layerTk .btnClose {
+	display: inline-block;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 14px;
+	height: 13px;
+	background: url(/monimg/gnb/topmenu_new/bg_gnb_all.gif) no-repeat -43px -142px;
+	text-indent: -9999em;
+}
+#header .secNavWrap .secNav .gMenu li.tk .layerTk .background {
+	z-index: -10;
+	position: absolute;
+	bottom: 30px;
+	right: 0px;
+	width: 145px;
+	height: 102px;
+}
+.layerTk .etcNav a img {
+	margin-bottom: 4px;
+	vertical-align: middle;
+}
+.layerTk h4 {
+	padding: 0 0 7px 24px;
+	etter-spacing: -1px;
+	background: none;
+	font-weight: normal;
+	font-family: "Malgun Gothic","맑은 고딕",dotum, "돋움" ,sans-serif;
+	font-size: 16px;
+	color: #000;
+}
+.layerTk .tkNav1 ul li, .layerTk .tkNav2 ul li, .layerTk .tkNav3 ul li, .layerTk .tkNav4 ul li {
+	margin-left: 25px;
+	padding: 2px 0 2px 8px;
+	background: url(/monimg/gnb/topmenu_new/bg_gnb_all.gif) no-repeat 0 -163px;
+	line-height: 1.3;
+}
+#header .secNavWrap .secNav .gMenu li.gj a.m {
+	width: 49px;
+}
+.layerGj {
+	overflow: hidden;
+	_zoom: 1;
+	padding: 16px 0 0 0;
+}
+.gMenu .gj .layerGj {
+	position: absolute;
+	top: 51px;
+	width: 759px;
+	border: 1px solid #57493e;
+	background: #fff;
+	z-index: 1010;
+}
+.layerGj .layInner {
+	overflow: hidden;
+	_zoom: 1;
+	margin: 0 0 20px 0;
+}
+.layerGj .btnClose {
+	display: inline-block;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 14px;
+	height: 13px;
+	background: url(/monimg/gnb/topmenu_new/bg_gnb_all.gif) no-repeat -43px -142px;
+	text-indent: -9999em;
+}
+.layerGj .layInner .gjNav1 {
+	float: left;
+	width: 175px;
+	height: 180px;
+	border-right: 1px solid #e9e9e9;
+}
+.layerGj .layInner .gjNav2 {
+	float: left;
+	width: 175px;
+	height: 180px;
+	border-right: 1px solid #e9e9e9;
+}
+.layerGj .layInner .gjNav3 {
+	float: left;
+	width: 175px;
+	height: 180px;
+	border-right: 1px solid #e9e9e9;
+}
+.layerGj .layInner .gjNav4 {
+	float: left;
+	width: 210px;
+	height: 180px;
+}
+.layerGj h4 {
+	padding: 0 0 7px 24px;
+	etter-spacing: -1px;
+	font-weight: normal;
+	background: none;
+	font-family: "Malgun Gothic","맑은 고딕",dotum, "돋움" ,sans-serif;
+	font-size: 16px;
+	color: #000;
+}
+.layerGj .layInner .gjNav1 ul li, .layerGj .layInner .gjNav3 ul li, .layerGj .layInner .gjNav4 ul li {
+	margin-left: 25px;
+	padding: 2px 0 2px 8px;
+	background: url(/monimg/gnb/icon_spot_1.gif) no-repeat 0 6px;
+	line-height: 1.3;
+}
+.layerGj .layInner .gjNav4 ul li p {
+	width: 210px;
+	margin-left: -5px;
+	padding: 2px 0 5px 0;
+	color: #888;
+}
+.layerGj .layInner .gjNav4 ul li p a {
+	display: inline-block;
+	padding: 2px 6px 2px 6px;
+	color: #888 !important;
+	background: url(/monimg/gnb/topmenu_new/bg_gnb_all.gif) no-repeat right -113px;
+}
+.layerGj .layInner .gjNav4 ul li p a.end {
+	background: none;
+}
+.layerGj h4.loc {
+	padding: 20px 0 5px 24px;
+}
+.layerGj .layInner .gjNav2 ul li {
+	margin-left: 23px;
+}
+.layerGj .layInner .gjNav2 ul li p {
+	width: 140px;
+	margin-left: -4px;
+	padding: 5px 0 10px 0;
+	color: #888;
+}
+.layerGj .layInner .gjNav2 ul li p a {
+	display: inline-block;
+	padding: 2px 6px 2px 6px;
+	!important: ;
+	background: url(/monimg/gnb/topmenu_new/bg_gnb_all.gif) no-repeat right -113px;
+}
+.layerGj .layInner .gjNav2 ul li p a.end {
+	background: none;
+}
+#header .secNavWrap .secNav .gMenu li.sp a.m {
+	width: 96px;
+}
+.layerSp {
+	overflow: hidden;
+	_zoom: 1;
+	padding: 16px 0 20px 0;
+}
+.gMenu .sp .layerSp {
+	position: absolute;
+	top: 51px;
+	left: 0px;
+	width: 958px;
+	border: 1px solid #57493e;
+	background: #fff;
+	z-index: 1010;
+}
+.layerSp .layInner {
+	overflow: hidden;
+	_zoom: 1;
+}
+.layerSp .btnClose {
+	display: inline-block;
+	position: absolute;
+	bottom: 15px;
+	right: 10px;
+	width: 14px;
+	height: 13px;
+	background: url(/monimg/gnb/topmenu_new/bg_gnb_all.gif) no-repeat -43px -142px;
+	text-indent: -9999em;
+}
+.layerSp .layInner .spNav1 {
+	float: left;
+	width: 340px;
+}
+.layerSp .layInner .spNav2 {
+	float: left;
+	width: 600px;
+	border-left: 1px solid #e9e9e9;
+}
+.layerSp h4 {
+	padding: 0 0 7px 24px;
+	etter-spacing: -1px;
+	background: none;
+	font-weight: normal;
+	font-family: "Malgun Gothic","맑은 고딕",dotum, "돋움" ,sans-serif;
+	font-size: 16px;
+	color: #000;
+}
+.layerSp .layInner .spNav2 ul {
+	margin-left: 25px;
+}
+.layerSp .layInner .spNav2 ul li {
+	float: left;
+	width: 123px;
+	margin: 0 10px 5px 0;
+	border: 1px solid #ddd;
+	border-radius: 20px;
+}
+.layerSp .layInner .spNav2 ul li a {
+	display: block;
+	height: 15px;
+	padding: 5px 0 2px 10px;
+	text-decoration: none;
+}
+.layerSp .layInner .spNav1 ul {
+	float: left;
+	width: 170px;
+}
+.layerSp .layInner .spNav1 ul li {
+	margin-left: 25px;
+	padding: 2px 0 2px 8px;
+	background: url(/monimg/gnb/icon_spot_1.gif) no-repeat 0 6px;
+	line-height: 1.3;
+}
+#header .secNavWrap .secNav .gMenu li.gi a.m {
+	width: 80px;
+}
+.layerGi {
+	overflow: hidden;
+	_zoom: 1;
+	padding: 16px 0 0 0;
+}
+.gMenu .gi .layerGi {
+	position: absolute;
+	top: 51px;
+	left: 0px;
+	width: 958px;
+	border: 1px solid #57493e;
+	background: #fff;
+	z-index: 1010;
+}
+#header .secNavWrap .secNav .gMenu li.gi .layerGi {
+	background: #fff;
+}
+.layerGi .layInner {
+	overflow: hidden;
+	_zoom: 1;
+	margin: 0 0 20px 0;
+}
+.layerGi .etcNav {
+	clear: both;
+	padding: 6px 0 0 44px;
+	height: 32px;
+	border-top: 1px solid #ede9e6;
+	background: #f9f9f9 url(/monimg/gnb/topmenu_new/bg_gnb_all.gif) no-repeat 15px -607px;
+	font-family: "Malgun Gothic","맑은 고딕",dotum, "돋움" ,sans-serif;
+	font-size: 15px;
+}
+.layerGi .btnClose {
+	display: inline-block;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 14px;
+	height: 13px;
+	background: url(/monimg/gnb/topmenu_new/bg_gnb_all.gif) no-repeat -43px -142px;
+	text-indent: -9999em;
+}
+#header .secNavWrap .secNav .gMenu li.gi .layerGi .background {
+	z-index: -10;
+	position: absolute;
+	top: 199px;
+	left: 10px;
+	width: 178px;
+	height: 85px;
+}
+#header .secNavWrap .secNav .gMenu li.gi .layerGi .background {
+	left: 25px;
+}
+.layerGi .etcNav a img {
+	margin-bottom: 4px;
+	vertical-align: middle;
+}
+.layerGi .layInner .giNav1 {
+	float: left;
+	width: 190px;
+	height: 248px;
+	border-right: 1px solid #e9e9e9;
+}
+.layerGi .layInner .giNav2 {
+	float: left;
+	width: 190px;
+	height: 248px;
+	border-right: 1px solid #e9e9e9;
+}
+.layerGi .layInner .giNav3 {
+	float: left;
+	width: 190px;
+	height: 248px;
+	border-right: 1px solid #e9e9e9;
+}
+.layerGi .layInner .giNav4 {
+	float: left;
+	width: 190px;
+	height: 248px;
+	border-right: 1px solid #e9e9e9;
+}
+.layerGi .layInner .giNav5 {
+	float: left;
+	width: 190px;
+	height: 248px;
+}
+.layerGi h4 {
+	padding: 3px 0 5px 24px;
+	font-weight: normal;
+	letter-spacing: -1px;
+	background: none;
+	font-family: "Malgun Gothic","맑은 고딕",dotum, "돋움" ,sans-serif;
+	font-size: 16px;
+	color: #000;
+}
+.layerGi .layInner .giNav5 p {
+	width: 125px;
+	padding: 0 0 0 20px;
+}
+.layerGi h4.loc {
+	padding: 20px 0 5px 24px;
+}
+.layerGi .layInner .giNav1 ul li, .layerGi .layInner .giNav2 ul li, .layerGi .layInner .giNav3 ul li, .layerGi .layInner .giNav4 ul li, .layerGi .layInner .giNav5 ul li {
+	margin-left: 25px;
+	padding: 2px 0 2px 8px;
+	background: url(/monimg/gnb/icon_spot_1.gif) no-repeat 0 6px;
+	line-height: 1.3;
+	color: #6d6d6d;
+}
+.layerGi .layInner .giNav5 p a {
+	display: inline-block;
+	padding: 2px 6px 2px 6px;
+	background: url(/monimg/gnb/topmenu_new/bg_gnb_all.gif) no-repeat right -113px;
+}
+.layerGi .layInner .giNav5 p a.end {
+	background: none;
+}
+.layerGi .layInner .giNav4 ul li p {
+	margin-left: -4px;
+}
+.layerGi .layInner .giNav4 ul li p a {
+	display: inline-block;
+	padding: 0 6px 0 6px;
+	background: url(/monimg/gnb/topmenu_new/bg_gnb_all.gif) no-repeat right -113px;
+}
+.layerGi .layInner .giNav4 ul li p a.end {
+	background: none;
+}
+.layerGi .layInner .giNav3 ul li p {
+	width: 125px;
+	margin-left: -4px;
+	padding: 3px 0 7px 0;
+	color: #888;
+}
+.layerGi .layInner .giNav3 ul li p a {
+	display: inline-block;
+	padding: 2px 6px 2px 6px;
+	background: url(/monimg/gnb/topmenu_new/bg_gnb_all.gif) no-repeat right -113px;
+}
+.layerGi .layInner .giNav3 ul li p a.end {
+	background: none;
+}
+.layerGi .layInner .giNav3 ul li p a img {
+	margin-bottom: 2px;
+	vertical-align: middle;
+}
+.layerGi .layInner .giNav2 ul li p {
+	width: 140px;
+	margin-left: -4px;
+	padding: 3px 0 7px 0;
+	color: #888;
+}
+.layerGi .layInner .giNav2 ul li p a {
+	display: inline-block;
+	padding: 2px 6px 2px 6px;
+	color: #888 !important;
+	background: url(/monimg/gnb/topmenu_new/bg_gnb_all.gif) no-repeat right -113px;
+}
+.layerGi .layInner .giNav2 ul li p a.end {
+	background: none;
+}
+a:visited {
+	color: #494949;
+	text-decoration: none;
+}
+</style>
+</head>
+<body class="monMain"><div id="wrap"><div id="header"><div class="secNavWrap secSmNav"><a href="http://www.jobkorea.co.kr/Starter/?am_start=am" target="_blank">
+    <!-- 기본 : secNavWrap 플랙서블: secNavWrap_1 클래스를 추가해주세요 -->
+    </a><div class="albamonIcon" style="display: none;"><a href="http://www.jobkorea.co.kr/Starter/?am_start=am" target="_blank"><a href="/" target="_top"><img alt="알바몬" src="http://contents.albamon.kr/monimg/gnb/bi/bi_shape.png"></a></div>
+        <div class="secNav">
+            <h2 class="skip">알바몬 주요 서비스메뉴</h2>
+            <ul class="gMenu">
+                <li class="navLi gi">
+                    <a class="m" href="/list/gi/mon_gi_main.asp" target="_top">채용정보</a>
+                    <!--// 채용정보 레이어 시작 -->
+                    <div class="layerGi" style="display: none;">
+                        <h3 class="skip">채용정보 전체메뉴</h3>
+                        <div class="layInner">
+                            <div class="giNav1">
+                                <h4><a href="/list/gi/mon_gi_main.asp ">채용정보 홈 바로가기</a></h4>
+                                <h4>일반알바정보</h4>
+                                <ul>
+                                    <li><a href="/list/gi/mon_gi_tot_list.asp">전체 알바정보</a></li>
+                                    <li><a href="/list/gi/mon_gi_list.asp?gubun=2">오늘의 알바</a></li>
+                                    <li><a href="/list/gi/mon_wanted_list.asp">급구 알바 </a></li>
+                                    <!--<li><a href="/list/gi/mon_gi_summer_list.asp">여름알바 채용관 <img src="http://contents.albamon.kr/monimg/gnb/icon_new_1.gif" alt="new" /></a></li>-->
+                                    <!--<li><a href="/list/gi/mon_gov_list.asp">관공서 알바 <img src="http://contents.albamon.kr/monimg/gnb/icon_new_1.gif" alt="new" /></a></li>-->
+                                    
+                                    <!--<li><a href="/list/gi/mon_chuseok_list.asp">추석알바 채용관 <img src="http://contents.albamon.kr/monimg/gnb/icon_new_1.gif" alt="new" /></a></li>-->
+                                    <li><a href="/list/gi/mon_search.asp">상세검색</a></li>
+                                </ul>
+                            </div>
+                            <div class="giNav2">
+                                <h4>지역별 알바정보</h4>
+                                <ul>
+                                    <li>
+                                        <a href="/list/gi/mon_area.asp">우리동네 알바</a>
+                                            <p>
+                                                <a href="/list/gi/mon_area.asp?scd=I000&amp;gcd=I000">서울</a><a href="/list/gi/mon_area.asp?scd=B000&amp;gcd=B000">경기</a><a href="/list/gi/mon_area.asp?scd=K000&amp;gcd=K000">인천</a><a class="end" href="/list/gi/mon_area.asp?scd=A000&amp;gcd=A000">강원</a>
+                                                <a href="/list/gi/mon_area.asp?scd=G000">대전</a><a href="/list/gi/mon_area.asp?scd=1000&amp;gcd=1000">세종</a><a href="/list/gi/mon_area.asp?scd=O000&amp;gcd=O000">충남</a><a class="end" href="/list/gi/mon_area.asp?scd=P000&amp;gcd=P000">충북</a>
+                                                <a href="/list/gi/mon_area.asp?scd=H000&amp;gcd=H000">부산</a><a href="/list/gi/mon_area.asp?scd=J000&amp;gcd=J000">울산</a><a href="/list/gi/mon_area.asp?scd=C000&amp;gcd=C000">경남</a><a class="end" href="/list/gi/mon_area.asp?scd=D000&amp;gcd=D000">경북</a>
+                                                <a href="/list/gi/mon_area.asp?scd=F000&amp;gcd=F000">대구</a><a href="/list/gi/mon_area.asp?scd=E000&amp;gcd=E000">광주</a><a href="/list/gi/mon_area.asp?scd=L000&amp;gcd=L000">전남</a><a class="end" href="/list/gi/mon_area.asp?scd=M000&amp;gcd=M000">전북</a>
+                                                <a href="/list/gi/mon_area.asp?scd=N000&amp;gcd=N000">제주</a><a class="end" href="/list/gi/mon_area.asp?scd=Q000&amp;gcd=Q000">전국</a>
+                                            </p>
+                                    </li>
+                                    <li><a href="/list/gi/mon_gi_map.asp">지도로 찾는 알바</a></li>
+                                        <li><a href="/list/gi/mon_subway.asp">역세권 알바</a></li>
+                                    <li><a href="/list/gi/mon_univ.asp">대학가 알바</a></li>
+                                </ul>
+                            </div>
+                            <div class="giNav3">
+                                <h4>업직종별 알바정보</h4>
+                                <ul>
+                                    <li><a href="/list/gi/mon_part.asp">업직종별 알바</a></li>
+                                        <li>
+                                            전문채용관
+                                            <p><a href="/list/gi/mon_special.asp?gubun=4">생산직</a><a class="end" href="/list/gi/mon_special.asp?gubun=2">텔레마케팅</a><a href="/list/gi/mon_special.asp?gubun=1">사무직</a><a class="end" href="/list/gi/mon_special.asp?gubun=3">바(Bar) <img alt="19세미만금지" src="http://contents.albamon.kr/monimg/gnb/icon_adult_1.gif"></a></p>
+                                        </li>
+                                </ul>
+                                <h4>스펙UP 알바정보</h4>
+                                <ul>
+                                    <li><a href="/spec/taste_gi_list.asp">직무경험 알바</a></li>
+                                    <li><a href="/spec/ability_gi_list.asp">능력활용 알바</a></li>
+                                    <li><a href="/spec/add_gi_list.asp">취업가산점 알바</a></li>
+                                    <li><a href="/spec/add_corp_list.asp">취업가산점 제공 기업</a></li>
+                                    <li><a href="/spec/self_introduct_tip.asp">스펙업 자소서팁</a></li>
+                                </ul>
+                            </div>
+                            <div class="giNav4">
+                                <h4>기간별 알바정보</h4>
+                                <ul>
+                                    <li><a href="/list/gi/mon_duty.asp">근무기간·요일·시간별 알바</a></li>
+                                    <li><p><a href="/list/gi/mon_icon_list.asp?itype=12">날짜별 단기</a><a class="end" href="/list/gi/mon_icon_list.asp?itype=12&amp;ShortType=B">하루 알바</a></p></li>
+                                    <li>
+                                        <p><a href="/list/gi/mon_icon_list.asp?itype=11">단기</a><a href="/list/gi/mon_icon_list.asp?itype=05">장기</a><a href="/list/gi/mon_icon_list.asp?itype=07">주말</a><a class="end" href="/list/gi/mon_icon_list.asp?itype=09">주5일</a></p>
+                                    </li>
+                                </ul>
+                                <h4 class="loc">급여·복지별 알바정보</h4>
+                                <ul>
+                                    <li><a href="/list/gi/mon_pay.asp">급여별 알바</a></li>
+                                    <li><a href="/list/gi/mon_icon_list.asp?itype=08">식대별도 알바</a></li>
+                                    <li><a href="/list/gi/mon_icon_list.asp?itype=99">당일지급 알바</a></li>
+                                    <li><a href="/list/gi/mon_icon_list.asp?itype=96">주급가능 알바</a></li>
+                                    <li><a href="/list/gi/mon_welfare_list.asp">복리후생별 알바 </a></li>
+                                </ul>
+                            </div>
+                            <div class="giNav5">
+                                <h4>대상별 알바정보</h4>
+                                <p>
+                                    <a href="/list/gi/mon_young_list.asp?gubun=1">청소년</a><a class="end" href="/list/gi/mon_young_list.asp?gubun=2">대학생</a>
+                                    <a href="/list/gi/mon_icon_list.asp?itype=98">주부</a><a href="/list/gi/mon_icon_list.asp?itype=97">장년</a><a class="end" href="/list/gi/mon_gi_handicap_list.asp">장애인</a>
+                                </p>
+                                <h4 class="loc">테마별 알바정보</h4>
+                                <ul>
+                                    <!-- <li><a href="/list/gi/mon_jkintern_list.asp">인턴 채용관</a></li>
+                                    <li><a href="/list/gi/mon_jkarmy_list.asp">병역특례 채용관</a></li> -->
+                                    <li><a href="/list/gi/mon_gi_preference_list.asp">우대조건별 알바</a></li>
+                                    <li><a href="/list/gi/mon_icon_list.asp?itype=04">초보가능 알바</a></li>
+                                    <li><a href="/list/gi/mon_icon_list.asp?itype=01">주목 알바</a></li>
+                                    <li><a href="/list/gi/mon_icon_list.asp?itype=10">재택 알바</a></li>
+                                    <li><a href="/list/gi/mon_icon_list.asp?itype=20">친구와 함께 알바</a></li>
+                                    <li><a href="/list/gi/mon_pass_list.asp?strpass=1000000">접수방법별 알바</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="etcNav">스마트폰에서 알바검색! 알바몬앱 하나로 끝! <a href="/service/mobile/" target="blank"><img alt="바로가기" src="http://contents.albamon.kr/monimg/gnb/btn_go_1.gif"></a></p>
+                        <button class="btnClose" type="button">닫기</button>
+
+                            <div class="background" aria-hidden="true"><img alt="" src="http://contents.albamon.kr/monimg/gnb/bg_gnb_gi_tvc.png"></div>
+                    </div>
+                    <!-- 채용정보 레이어 끝 //-->
+                </li>
+
+                <li class="navLi sp">
+                    <a class="m" href="/list/gi/mon_brand.asp" target="_top">브랜드알바</a>
+                    <!--//브랜드알바 -->
+                    <div class="layerSp" style="display: none;">
+                        <div class="layInner">
+                            <div class="spNav1">
+                                <h4>브랜드알바정보</h4>
+                                <ul>
+                                    <li><a href="/list/gi/mon_brand_list.asp?brpcd=1010">일반음식점</a></li>
+                                    <li><a href="/list/gi/mon_brand_list.asp?brpcd=1030">패밀리레스토랑</a></li>
+                                    <li><a href="/list/gi/mon_brand_list.asp?brpcd=1040">패스트푸드점</a></li>
+                                    <li><a href="/list/gi/mon_brand_list.asp?brpcd=1050">치킨전문점</a></li>
+                                    <li><a href="/list/gi/mon_brand_list.asp?brpcd=1060">커피전문점</a></li>
+                                    <li><a href="/list/gi/mon_brand_list.asp?brpcd=1070">아이스크림·디저트</a></li>
+                                    <li><a href="/list/gi/mon_brand_list.asp?brpcd=1080">베이커리·도넛</a></li>
+                                    <li><a href="/list/gi/mon_brand_list.asp?brpcd=2010">백화점·면세점</a></li>
+                                    <li><a href="/list/gi/mon_brand_list.asp?brpcd=2020">유통점·마트</a></li>
+                                    <li><a href="/list/gi/mon_brand_list.asp?brpcd=2030">편의점</a></li>
+                                    <li><a href="/list/gi/mon_brand_list.asp?brpcd=9013">쇼핑몰·소셜커머스운영</a></li>
+                                    <li><a href="/list/gi/mon_brand_list.asp?brpcd=2050">의류·잡화매장</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="/list/gi/mon_brand_list.asp?brpcd=2060">뷰티·헬스스토어</a></li>
+                                    <li><a href="/list/gi/mon_brand_list.asp?brpcd=2070">휴대폰·전자기기매장</a></li>
+                                    <li><a href="/list/gi/mon_brand_list.asp?brpcd=2080">가구·침구·생활용품</a></li>
+                                    <li><a href="/list/gi/mon_brand_list.asp?brpcd=2090">서점·문구팬시</a></li>
+                                    <li><a href="/list/gi/mon_brand_list.asp?brpcd=3010">놀이공원·테마파크</a></li>
+                                    <li><a href="/list/gi/mon_brand_list.asp?brpcd=3043">영화·공연</a></li>
+                                    <li><a href="/list/gi/mon_brand_list.asp?brpcd=3030">호텔·리조트·숙박</a></li>
+                                    <li><a href="/list/gi/mon_brand_list.asp?brpcd=4100">주유·세차</a></li>
+                                    <li><a href="/list/gi/mon_brand_list.asp?brpcd=7010">고객상담·인바운드</a></li>
+                                    <li><a href="/list/gi/mon_brand_list.asp?brpcd=A060">방문·학습지</a></li>
+                                    <li><a href="/list/gi/mon_brand_list.asp?brpcd=4110">배달</a></li>
+                                </ul>
+                            </div>
+                            <div class="spNav2">
+                                <h4>스페셜 브랜드</h4>
+                                	<ul>		<li><a href="/list/gi/mon_store_list.asp?gubun=6&amp;clickpath=14" target="_blank">왓슨스 코리아</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=13&amp;clickpath=14" target="_blank">롯데백화점</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=58&amp;clickpath=14" target="_blank">롯데마트</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=46&amp;clickpath=14" target="_blank">던킨도너츠</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=35&amp;clickpath=14" target="_blank">뚜레쥬르</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=40&amp;clickpath=14" target="_blank">마노핀</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=3&amp;clickpath=14" target="_blank">맥도날드</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=39&amp;clickpath=14" target="_blank">미스터피자</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=45&amp;clickpath=14" target="_blank">배스킨라빈스</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=2&amp;clickpath=14" target="_blank">버거킹</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=32&amp;clickpath=14" target="_blank">빕스</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=33&amp;clickpath=14" target="_blank">신사업</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=7&amp;clickpath=14" target="_blank">스타벅스커피코리아</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=67&amp;clickpath=14" target="_blank">풀무원건강생활</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=51&amp;clickpath=14" target="_blank">자라코리아</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=53&amp;clickpath=14" target="_blank">아비꼬카레</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=37&amp;clickpath=14" target="_blank">이랜드파크 외식사업부</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=72&amp;clickpath=14" target="_blank">애슐리</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=73&amp;clickpath=14" target="_blank">자연별곡</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=43&amp;clickpath=14" target="_blank">피자헛</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=55&amp;clickpath=14" target="_blank">지오다노</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=36&amp;clickpath=14" target="_blank">컨세션</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=47&amp;clickpath=14" target="_blank">CJ 올리브영</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=34&amp;clickpath=14" target="_blank">투썸플레이스</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=44&amp;clickpath=14" target="_blank">하남돼지집</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=10&amp;clickpath=14" target="_blank">HOLLYS COFFEE</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=21&amp;clickpath=14" target="_blank">GS25</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=38&amp;clickpath=14" target="_blank">MIXXO</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=57&amp;clickpath=14" target="_blank">계절밥상</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=59&amp;clickpath=14" target="_blank">웅진씽크빅</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=60&amp;clickpath=14" target="_blank">죠스떡볶이</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=61&amp;clickpath=14" target="_blank">푸드플라이</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=62&amp;clickpath=14" target="_blank">오렌지팩토리</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=63&amp;clickpath=14" target="_blank">남오토코</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=64&amp;clickpath=14" target="_blank">파리바게뜨</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=65&amp;clickpath=14" target="_blank">파스쿠찌</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=66&amp;clickpath=14" target="_blank">스시로한국</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=68&amp;clickpath=14" target="_blank">아웃백스테이크하우스</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=70&amp;clickpath=14" target="_blank">KFC</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=71&amp;clickpath=14" target="_blank">써브웨이</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=74&amp;clickpath=14" target="_blank">노스페이스</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=76&amp;clickpath=14" target="_blank">바르다 김선생</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=78&amp;clickpath=14" target="_blank">SPAO</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=79&amp;clickpath=14" target="_blank">LATEM</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=80&amp;clickpath=14" target="_blank">디초콜릿커피&amp;</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=81&amp;clickpath=14" target="_blank">스쿨푸드</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=82&amp;clickpath=14" target="_blank">소상공인 브랜드</a></li>		<li><a href="/list/gi/mon_store_list.asp?gubun=83&amp;clickpath=14" target="_blank">배민라이더스</a></li>	</ul>
+                            </div>
+                        </div>
+                        <button class="btnClose" type="button">닫기</button>
+                    </div>
+                    <!--브랜드알바 레이어 끝//-->
+                </li>
+
+                <li class="navLi gj">
+                    <a class="m" href="/goodjob/" target="_top">굿잡</a>
+                    <!--// 굿잡 레이어 시작 -->
+                    <div class="layerGj" style="display: none;">
+                        <h3 class="skip">굿잡 전체메뉴</h3>
+                        <div class="layInner">
+                            <div class="gjNav1">
+                                <h4><a href="/goodjob/">굿잡 홈 바로가기</a></h4>
+                                <h4>일반 채용정보</h4>
+                                <ul>
+                                    <li><a href="/goodjob/list/main_list.asp">전체 채용정보</a></li>
+                                    <li><a href="/goodjob/list/today_list.asp">오늘의 채용정보</a></li>
+                                    <li><a href="/goodjob/list/part_main.asp">업직종별 채용정보</a></li>
+                                    <li><a href="/goodjob/list/empmnt_list.asp">고용형태별 채용정보</a></li>
+                                </ul>
+                            </div>
+                            <div class="gjNav2">
+                                <h4>지역별 채용정보</h4>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            <a href="/goodjob/list/area_list.asp?rArea=,I000">서울</a><a href="/goodjob/list/area_list.asp?rArea=,B000">경기</a><a href="/goodjob/list/area_list.asp?rArea=,K000">인천</a><a class="end" href="/goodjob/list/area_list.asp?rArea=,A000">강원</a>
+                                            <a href="/goodjob/list/area_list.asp?rArea=,G000">대전</a><a href="/goodjob/list/area_list.asp?rArea=,1000">세종</a><a href="/goodjob/list/area_list.asp?rArea=,O000">충남</a><a class="end" href="/goodjob/list/area_list.asp?rArea=,P000">충북</a>
+                                            <a href="/goodjob/list/area_list.asp?rArea=,H000">부산</a><a href="/goodjob/list/area_list.asp?rArea=,J000">울산</a><a href="/goodjob/list/area_list.asp?rArea=,C000">경남</a><a class="end" href="/goodjob/list/area_list.asp?rArea=,D000">경북</a>
+                                            <a href="/goodjob/list/area_list.asp?rArea=,F000">대구</a><a href="/goodjob/list/area_list.asp?rArea=,E000">광주</a><a href="/goodjob/list/area_list.asp?rArea=,L000">전남</a><a class="end" href="/goodjob/list/area_list.asp?rArea=,M000">전북</a>
+                                            <a href="/goodjob/list/area_list.asp?rArea=,N000">제주</a><a class="end" href="/goodjob/list/area_list.asp?rArea=,Q000">전국</a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="gjNav3">
+                                <h4>대상별 채용정보</h4>
+                                <ul>
+                                    <li><a href="/goodjob/list/intern_list.asp">청년인턴 채용</a></li>
+                                    <li><a href="/goodjob/list/homemaker_list.asp">주부 채용</a></li>
+                                    <li><a href="/goodjob/list/silver_list.asp">장년 채용</a></li>
+                                </ul>
+                                <h4 class="loc">테마별 채용정보</h4>
+                                <ul>
+                                    <li><a href="/goodjob/list/parttime_list.asp">시간 선택제</a></li>
+                                    <li><a href="/goodjob/list/public_list.asp">공공기관 채용</a></li>
+                                </ul>
+                            </div>
+                            <div class="gjNav4">
+                                <h4>우대조건별 채용정보</h4>
+                                <ul>
+                                    <li>
+                                        <a href="/goodjob/list/preference_list.asp?rPrefer=,12,13,14">어학능력 우대</a>
+                                        <p>
+                                            <a href="/goodjob/list/preference_list.asp?rPrefer=,12">영어</a><a href="/goodjob/list/preference_list.asp?rPrefer=,13">일본어</a><a class="end" href="/goodjob/list/preference_list.asp?rPrefer=,14">중국어</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <a href="/goodjob/list/preference_list.asp?rPrefer=,22,19,20,37">OA 활용능력 우대</a>
+                                        <p>
+                                            <a href="/goodjob/list/preference_list.asp?rPrefer=,22">한글</a><a href="/goodjob/list/preference_list.asp?rPrefer=,19">워드</a><a href="/goodjob/list/preference_list.asp?rPrefer=,20">엑셀</a><a class="end" href="/goodjob/list/preference_list.asp?rPrefer=,37">파워포인트</a>
+                                        </p>
+                                    </li>
+                                    <li><a href="/goodjob/list/preference_list.asp?rPrefer=,23">자격증 소지자 우대</a></li>
+                                    <li><a href="/goodjob/list/preference_list.asp?rPrefer=,36">운전가능자 우대</a></li>
+                                    <li><a href="/goodjob/list/preference_list.asp?rPrefer=,30">군필자 우대</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="btnClose" type="button">닫기</button>
+                    </div>
+                    <!-- 굿잡 레이어 끝 //-->
+                </li>
+
+                <li class="navLi tk">
+                    <a class="m" href="/community/tb_main" target="_top">알바토크</a>
+                    <!--// 알바토크 레이어 시작 -->
+                    <div class="layerTk" style="display: none;">
+                        <h3 class="skip">알바토크 전체메뉴</h3>
+
+                        <!--// 20170223 한유연 / 알바토크 메인개편 반영 -->
+                        <div class="tkNav1">
+                            <h4>공감톡</h4>
+                            <ul>
+                                <li><a href="/community/alba/list-exp">알바경험담</a></li>
+                                
+                                <li><a href="/community/oneline">한줄톡</a></li>
+                                <li><a href="/community/interview">알바면접족보</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="tkNav2">
+                            <h4>정보톡</h4>
+                            <ul>
+                                <li><a href="/community/Recruit_Advice/Advice_List">알바노무상담</a></li>
+                                <li><a href="/community/Webtoon/Collabo">웹툰알바왕 <img alt="new" src="/monimg/gnb/icon_new_1.gif"></a></li>
+                                <li><a href="/community/photo/photo_list">이력서뽀샵사진관</a></li>
+                                <li><a href="/community/Alba_info/Tb_download">문서서식</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="tkNav3">
+                            <h4>캠페인</h4>
+                            <ul>
+                                <li><a href="/service/interests/interests_lowpay.asp" target="_blank">알바의 상식</a></li>
+                                <li><a href="/service/safe/caution.asp" target="_blank">안심캠페인</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="tkNav4">
+                            <h4>알림톡</h4>
+                            <ul>
+                                <li><a href="/service/company/notice_list.asp">공지사항 </a></li>
+                                <li><a href="/community/Event/Event_list">이벤트 </a></li>
+                                <li><a href="http://contest.albamon.com/" target="_blank">공모전</a></li>
+                            </ul>
+                        </div>
+
+
+                        <p class="etcNav">알바 구하기 전 잠깐! 이런 알바는 조심하세요.&nbsp;<a href="/service/safe/caution.asp" target="_blank"><img alt="바로가기" src="http://contents.albamon.kr/monimg/gnb/btn_go_1.gif"></a></p>
+
+                        <button class="btnClose" type="button">닫기</button>
+
+                            <div class="background" aria-hidden="true"><img alt="" src="http://contents.albamon.kr/monimg/gnb/bg_gnb_talk_tvc.png"></div>
+
+                    </div>
+                    <!-- 알바토크 레이어 끝 //-->
+                </li>
+
+                <li class="navLi gg">
+                    <a class="m" href="/ResumeSearch" target="_top">인재정보</a>
+                    <!--// 인재정보 레이어 시작 -->
+                    <div class="layerGg" style="display: none;">
+                        <h3 class="skip">인재정보 전체메뉴</h3>
+                        <div class="layInner">
+                            <div class="ggNav1">
+                                <h4>인재정보</h4>
+                                <ul>
+                                    <li><a href="/ResumeSearch">전체 인재정보</a></li>
+                                    <li><a href="/ResumeSearch/by-date">날짜별 인재</a></li>
+                                    <li><a href="/ResumeSearch/freelancer">프리랜서</a></li>
+                                    <li><a href="/ResumeSearch/veteran">베테랑 인재</a></li>
+                                    <li><a href="/ResumeSearch/university">대학생 인재</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <button class="btnClose" type="button">닫기</button>
+                    </div>
+                    <!-- 인재정보 레이어 끝 //-->
+                </li>
+                    <li class="navLi tu">
+                        <a class="m" href="/mem/mon_gg_home.asp" target="_top">개인서비스</a>
+                        <!--// 개인서비스 레이어 시작 -->
+                        <div class="layerTu" style="display: none;">
+                            <h3 class="skip">개인서비스 전체메뉴</h3>
+                            <div class="tuNav1">
+                                <h4>이력서관리</h4>
+                                <ul>
+                                    <li><a href="/mem/mon_resume_edit_view.asp">이력서 관리</a></li>
+                                    <li><a href="/mem/mon_resume_type.asp">새 이력서 작성</a></li>
+                                    <li><a href="/mem/mon_resume_stat.asp">인재정보 등록</a></li>
+                                    <li><a href="/mem/mon_photoalba.asp">내 사진 관리</a></li>
+                                    <li><a href="/member/portfolio">포트폴리오 관리</a></li>
+                                </ul>
+                            </div>
+                            <div class="tuNav2">
+                                <h4>알바활동관리</h4>
+                                <ul>
+                                    <li><a href="/mem/mon_apply_mng.asp">알바 지원현황</a></li>
+                                        <li><a href="/Contract">근로계약서 <img alt="new" src="/monimg/gnb/icon_new_1.gif"></a></li>
+                                    <li><a href="/mem/mon_cert.asp">취업활동증명서</a></li>
+                                    <li><a href="/mem/mon_resume_open.asp">내 이력서 열람기업</a></li>
+                                    <li><a href="/mem/mon_resume_limit_list.asp">이력서 열람제한 설정</a></li>
+                                </ul>
+                            </div>
+                            <div class="tuNav3">
+                                <h4>알바채용정보관리</h4>
+                                <ul>
+                                    <li><a href="/list/gi/mon_scrap_list.asp?stype=mem">스크랩 알바정보 </a></li>
+                                    <li><a href="/mem/mon_mj_list.asp?PagePosition=ok">맞춤알바정보</a></li>
+                                    <li><a href="/mem/mon_favor_corp.asp">관심기업 알바정보</a></li>
+                                </ul>
+                            </div>
+                            <div class="tuNav4">
+                                <h4>유료서비스관리</h4>
+                                <ul>
+                                    <li><a href="/mem/fee/mon_gg_opt_add.asp">이력서파워아이템 신청</a></li>
+                                    <li><a href="/mem/fee/mon_gg_opt_history.asp">유료이용내역 </a></li>
+                                </ul>
+                            </div>
+                            <div class="tuNav5">
+                                <h4>회원정보관리</h4>
+                                <ul>
+                                        <li><a href="/mem/mon_mem_info_main.asp">회원정보 확인·수정</a></li>
+                                    <li><a href="/mem/mon_rep_pwd.asp">비밀번호 변경</a></li>
+
+                                        <li><a href="/mem/mon_mem_info_main.asp">간편 로그인 관리 <img alt="new" src="/monimg/gnb/icon_new_1.gif"></a></li>
+                                    <li><a href="/mem/mon_newsletter.asp">뉴스레터·문자알림 설정  </a></li>
+                                </ul>
+                            </div>
+                            <p class="etcNav">
+                                    <span>개인서비스는 알바몬 개인회원 로그인 후 이용 가능합니다. <a onclick="goMainLocLogin(this.href,'/,');return false;" href="/login/login_tot.asp"><img alt="로그인하기" src="http://contents.albamon.kr/monimg/gnb/btn_login_1.gif"></a> <a href="/login/agree.asp" target="_top"><img alt="회원가입하기" src="http://contents.albamon.kr/monimg/gnb/btn_join_1.gif"></a></span>
+                            </p>
+                            <button class="btnClose" type="button">닫기</button>
+                        </div>
+                        <!-- 개인서비스 레이어 끝 //-->
+                    </li>
+
+                    <li class="navLi tc" id="dev_navLi">
+                        <a class="m" href="/corp/mon_gi_home.asp" target="_top">기업서비스</a>
+                        <!--// 기업서비스 레이어 시작 -->
+                        <div class="layerTc" style="display: none;">
+                            <h3 class="skip">기업서비스 전체메뉴</h3>
+                            <div class="tcNav1">
+                                <h4>기업상품 안내</h4>
+                                <ul>
+                                    <li><a href="/corp/fee/mon_fee_option_gi.asp">등록전체안내</a></li>
+                                        <li><a href="/corp/fee/mon_corp_service_info.asp?optPagetype=pack">등록패키지 신청</a></li>
+                                        <li><a href="/corp/fee/mon_corp_service_info.asp?optPagetype=search">이력서열람서비스 신청 </a></li>
+                                        <li><a href="/corp/fee/mon_corp_service_info.asp?optPagetype=pass">알바제의문자 신청</a></li>
+                                </ul>
+                                <p style="padding: 7px 0px 0px; text-align: center;"><a href="http://assessment.jobkorea.co.kr/" target="_blank"><img alt="올바른 인재선발의 지름길 기업용 인적성검사 자세히보기" src="/monimg/banner/20160215_ctest_180x65.gif"></a></p>
+
+                            </div>
+                            <div class="tcNav2">
+                                <h4>알바공고관리</h4>
+                                <ul>
+                                    <li><a href="/corp/mon_em_mng.asp?page=1&amp;orderbylist=C">게재중인 공고</a></li>
+                                    <li><a href="/corp/mon_em_mng.asp?page=1&amp;orderbylist=B">대기중인 공고</a></li>
+                                    <li><a href="/corp/mon_em_mng.asp?page=1&amp;orderbylist=D">마감된 공고</a></li>
+                                    <li>
+                                        <a href="/corp/mon_poster_list.asp">
+                                            벽보 제작 서비스
+                                        </a>
+                                    </li>
+                                    <li><a href="/corp/mon_em_apply_list.asp?tcd=1">지원자 관리</a></li>
+                                    <li><a href="/corp/mon_clerk_list.asp">담당자정보 관리</a></li>
+                                    <li><a href="/corp/mon_corpform.asp">자사양식 관리</a></li>
+                                    <li><a href="/corp/mon_question.asp">사전질문 관리 </a></li>
+                                    <li><a href="/corp/mon_mng_photo.asp">공고사진 관리 </a></li>
+                                </ul>
+                            </div>
+                            <div class="tcNav3">
+                                <h4>알바인재관리</h4>
+                                <ul>
+                                    <li><a href="/corp/mon_scrap.asp">스크랩 인재정보 </a></li>
+                                    <li><a href="/corp/mon_memo_list.asp">메모한 인재정보</a></li>
+                                    <li><a href="/corp/mon_mj_list.asp">맞춤인재정보 </a></li>
+                                    <li><a href="/corp/mon_resumeinfo_list.asp">열람한 인재정보</a></li>
+                                        <li><a href="/Contract">근로계약서 <img alt="new" src="/monimg/gnb/icon_new_1.gif"></a></li>
+
+                                </ul>
+                            </div>
+                            <div class="tcNav4">
+                                <h4>유료내역관리</h4>
+                                <ul>
+                                    <li><a href="/corp/fee/mon_opt_pay_history.asp">유료결제내역</a></li>
+                                    <li><a href="/corp/fee/mon_gi_nopay_history.asp">미입금 내역</a></li>
+                                    <li><a href="/corp/fee/mon_emoney_history.asp">e-머니 내역</a></li>
+                                    <li><a href="/corp/fee/mon_cash_history.asp">충전금 내역</a></li>
+                                    <li><a href="/corp/fee/mon_coupon_list.asp">알바몬쿠폰함</a></li>
+                                    <li><a href="/corp/fee/mon_electax_list.asp">전자세금계산서 확인</a></li>
+                                    <li><a href="/corp/mon_pay_type_history.asp">결제방법별 내역조회 </a></li>
+                                </ul>
+                            </div>
+                            <div class="tcNav5">
+                                <h4>회원정보관리</h4>
+                                <ul>
+                                        <li><a href="/corp/mon_co_info_view.asp">회원정보 확인·수정</a></li>
+                                    <li><a href="/corp/mon_co_rep_pwd.asp">비밀번호 변경</a></li>
+                                    <li><a href="/corp/mon_newsletter.asp">뉴스레터·문자알림 설정</a></li>
+                                </ul>
+                            </div>
+
+                                <p class="etcNav">기업서비스는 알바몬 기업회원 로그인 후 이용 가능합니다. <a onclick="goMainLocLogin(this.href,'/,');return false;" href="/login/login_tot.asp?mtype=gi"><img alt="로그인하기" src="http://contents.albamon.kr/monimg/gnb/btn_login_1.gif"></a> <a href="/login/agree.asp" target="_top"><img alt="회원가입하기" src="http://contents.albamon.kr/monimg/gnb/btn_join_1.gif"></a></p>
+                            <button class="btnClose" type="button">닫기</button>
+                        </div>
+                        <!-- 기업서비스 레이어 끝 //-->
+                    </li>
+            </ul>
+            <ul class="subNav">
+                    <li class="sNavLi rs"><a class="m" href="/mem/mon_resume_edit_view.asp" target="_top">이력서등록</a></li>
+                                
+                    <li class="sNavLi an">
+                        <a class="m" href="/corp/fee/mon_fee_option_gi.asp" target="_top">공고등록</a>
+                        <!--// 공고등록 레이어 시작 -->
+                        <div class="layerAn" style="display: none;">
+                            <h3 class="skip">공고등록 전체메뉴</h3>
+                            <div class="anLeft">
+                                <div class="anTop">
+                                    <p class="ad"><img alt="알바몬에 공고를 등록하시면 비용대비 효과 UP!! 유료 상품으로 조회수와 지원자수를 효과적으로 올리세요!" src="http://contents.albamon.kr/monimg/banner/gnb_160308.jpg"></p>
+                                    
+                                </div>
+                                <div class="anMain">
+                                    <div class="anNavBx1">
+                                        <div class="tit"><span>모바일</span></div>
+                                        <div class="anNav1">
+                                            <h4>알바몬앱 + PC웹 결합 <img alt="추천" src="/monimg/gnb/icon_recommend_2.gif"></h4>
+                                            <ul>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=LGrandMLGrand">지역 Grand + M 지역 Grand</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=LFocusMLFocus">지역 Focus + M 지역 Focus</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=LSpeMLSpe">지역 Special + M 지역 Special </a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=WantedMWanted">급구 + M 급구 <img alt="new" src="http://contents.albamon.kr/monimg/gnb/icon_new_1.gif"></a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=ATopLogoMATopLogo">지역 TOP-Logo + M 지역 TOP-Logo </a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=ATopMATop">지역 TOP + M 지역 TOP </a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=SuperJump">슈퍼점프</a></li>
+                                            </ul>
+                                            <h4 class="loc">알바몬앱 <img alt="추천" src="/monimg/gnb/icon_recommend_2.gif"></h4>
+                                            <ul>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=MLGrand">M 지역 Grand</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=MLFocus">M 지역 Focus</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=MLSpe">M 지역 Special</a></li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=MLSpe">
+                                                </a><li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=MLSpe"><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=MAPoint">M 지역 Point <img alt="new" src="http://contents.albamon.kr/monimg/gnb/icon_new_1.gif"></a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=MTopLogo">M TOP-Logo </a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=MTop">M TOP </a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=MWanted">M 급구 <img alt="new" src="http://contents.albamon.kr/monimg/gnb/icon_new_1.gif"></a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=MShortTerm">M 단기 <img alt="new" src="http://contents.albamon.kr/monimg/gnb/icon_new_1.gif"></a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=MATopLogo">M 지역 TOP-Logo </a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=MATop">M 지역 TOP </a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=MMatchTop">M 맞춤 TOP</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=MPowerJump">M 파워점프</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=MJump">M 점프</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=MIcon">M 아이콘</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="anNavBx2">
+                                        <div class="tit"><span>PC웹</span></div>
+                                        <div class="anNav2">
+                                            <h4>알바몬 메인</h4>
+                                            <ul>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=PlatinumVIP">플래티넘-VIP </a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=Platinum">플래티넘</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=Grand">Grand</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=Focus">Focus</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=Spe">Special</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=Box">박스 </a></li>
+                                            </ul>
+                                            <h4 class="loc">채용정보 메인</h4>
+                                            <ul>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=HLSVIP">헤드라인-VIP </a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=HLS">헤드라인 </a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=Premium">프리미엄 </a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=Plus">플러스</a></li>
+                                            </ul>
+                                            <h4 class="loc">업직종별/전문채용관</h4>
+                                            <ul>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=PGrand">업직종 Grand</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=PFocus">업직종 Focus </a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=PSpe">업직종 Special</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=PTopLogo">업직종 TOP-Logo</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=PartTop">업직종 TOP </a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="anNav3">
+                                            <h4>우리동네 알바</h4>
+                                            <ul>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=LGrand">지역 Grand</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=LFocus">지역 Focus</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=LSpe">지역 Special</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=ATopLogo">지역 TOP-Logo</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=AreaTop">지역 TOP </a></li>
+                                            </ul>
+                                            <h4 class="loc">채용정보 리스트</h4>
+                                            <ul>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=TopLogo">TOP-Logo</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=Top">TOP</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=Speed">스피드 </a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=TDLogo">Today-Logo </a></li>
+
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=PJump">파워점프</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=Jump">점프</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=PowerWanted">파워급구</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=WLogo">급구-Logo</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=Wanted"> 급구알바 </a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="anNav4">
+                                            <h4>일반공고등록</h4>
+                                            <ul>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=MDoubleUp">즉시등록-M더블업</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=DoubleUp">즉시등록-더블업 </a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=Now">즉시등록</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=Free">무료등록</a></li>
+                                            </ul>
+                                            <h4 class="loc">강조옵션</h4>
+                                            <ul>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=FPen">형광펜</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=FColor">반짝컬러</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=Color">컬러</a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=Bold">볼드 </a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=FIcon">반짝아이콘</a></li>
+                                            </ul>
+                                            <h4 class="loc">통합검색</h4>
+                                            <ul>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=KeyLogo">키워드-Logo </a></li>
+                                                <li><a onclick="return Gnb_Opt_Menu_Nomem(this.href);" href="/corp/mon_gi_reg.asp?mflag=KeyShop">키워드 </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="anRight">
+                                <div class="anNav5">
+                                    <h4>기업회원 공고관리</h4>
+                                    <ul>
+                                        <li><a href="/corp/mon_em_mng.asp?page=1&amp;orderbylist=C">게재중인 공고</a></li>
+                                        <li><a href="/corp/mon_em_mng.asp?page=1&amp;orderbylist=B">대기중인 공고</a></li>
+                                        <li><a href="/corp/mon_em_apply_list.asp?tcd=1">지원자 관리</a></li>
+                                    </ul>
+                                </div>
+                                <div class="anNav6">
+                                    <h4>등록패키지 안내</h4>
+                                    <dl>
+                                        <dt>즉시등록 패키지</dt>
+                                        <dd>
+                                            <span class="num"><em>15</em>건</span>
+                                            <span class="price1"><em>99,000</em>원</span>
+                                            <span class="price2"><em>84,200</em>원</span>
+                                        </dd>
+
+                                        <dt>M파워점프패키지</dt>
+                                        <dd>
+                                            <span class="num"><em>30</em>건</span>
+                                            <span class="price1"><em>429,000</em>원</span>
+                                            <span class="price2"><em>399,000</em>원</span>
+                                        </dd>
+
+                                        <dt>슈퍼점프패키지 (PC+모바일)</dt>
+                                        <dd>
+                                            <span class="num"><em>30</em>건</span>
+                                            <span class="price1"><em>627,000</em>원</span>
+                                            <span class="price2"><em>583,000</em>원</span>
+                                        </dd>
+                                    </dl>
+                                    <p class="appBtn"><a href="/corp/fee/mon_corp_service_info.asp?optPagetype=pack"><img alt="신청하기" src="http://contents.albamon.kr/monimg/gnb/btn_request_1.gif"></a></p>
+                                </div>
+                            </div>
+                            <!--<p class="etcNav"><span>주요상품 한눈에 비교하기 <a href="#" onclick="swinPop('/corp/fee/mon_fee_option_gi_pop.asp','monpop','950','600','1'); return false;"><img src="/monimg/gnb/btn_compare_1.gif"  alt="공고등록 상품 비교표" /></a></span> <span>노출위치 및 노출형태 미리 체험하기 <a href="#" onclick="swinPop('/corp/preview/mon_overp.asp?mflag=Platinum&ck=','product_guide1','837','800','1'); return false;"><img src="/monimg/gnb/btn_dguide_1.gif" alt="전체상품 상세안내 및 체험" /></a></span> </p>-->
+                            <p class="etcNav"><a onclick="swinPop('/corp/fee/mon_fee_estimate.asp', 'monpop', '840', '700', '1'); return false;" href="#"><img alt="상품견적 서비스" src="http://contents.albamon.kr/monimg/common/left_mnu/btn_estimate_1.gif"></a><a onclick="    swinPop('/corp/fee/mon_fee_option_gi_pop.asp', 'monpop', '950', '600', '1'); return false;" href="#"><img alt="상품 비교표" src="http://contents.albamon.kr/monimg/common/left_mnu/btn_compare_1.gif"></a><a onclick="    swinPop('/corp/preview/mon_overp.asp?mflag=lgrandmlgrand&amp;ck=', 'product_guide1', '950', '725', '1'); return false;" href="#"><img alt="상품 상세안내 및 체험" src="http://contents.albamon.kr/monimg/common/left_mnu/btn_guide_1.gif"></a></p>
+                            <button class="btnClose" type="button">닫기</button>
+                        </div>
+                        <!-- 공고등록 레이어 끝 //-->
+                    </li>
+            </ul>
+        </div>
+
+</div></div></div></body>
+</html>

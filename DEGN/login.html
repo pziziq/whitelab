@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ko" lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+<title></title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<style>
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	padding: 0;
+	margin: 0;
+}
+.mPoint .pointSide .mainLogin {
+	overflow: hidden;
+	position: relative;
+	width: 238px;
+	height: 108px;
+	border: 1px solid #d6d6d6;
+}
+.mPoint .pointSide {
+	float: right;
+	width: 240px;
+}
+.mPoint {
+	*zoom:1: ;
+}
+.mPoint::after {
+	display: block;
+	clear: both;
+	content: ".";
+	font-size: 0px;
+}
+#container #subContentbg {
+	*zoom:1: ;
+	width: 960px;
+	margin-bottom: 20px;
+}
+#container #subContentbg::after {
+	content: ".";
+	display: block;
+	height: 0px;
+	clear: both;
+	visibility: hidden;
+}
+#container {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+	z-index: 3;
+}
+#wrap {
+	width: 100%;
+}
+.monMain #wrap {
+	background: url(/monimg/main/point/bg_brand_wrap.gif) repeat-x 0 560px;
+}
+body {
+	font: 12px gulim, "굴림", dotum, "돋움", arial, sans-serif;
+	color: #494949;
+}
+html {
+	_overflow-y: scroll;
+	_overflow-x: auto;
+	height: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-size: 100%;
+}
+#accessibility, .skip, legend, .blind {
+	overflow: hidden;
+	position: absolute;
+	top: -5000em;
+	visibility: hidden;
+	width: 1px;
+	height: 1px;
+	line-height: 0;
+	font-size: 0px;
+}
+ol, ul, li {
+	list-style: none;
+}
+.mPoint .pointSide .mainLogin .memBtn {
+	overflow: hidden;
+	height: 70px;
+	padding: 0 0 0 0;
+}
+.mPoint .pointSide .mainLogin .search {
+	height: 24px;
+	margin: 0 0 0 0;
+	padding: 12px 0 0 0;
+	border-top: 1px solid #ddd;
+	background: #f6f7fa;
+	text-align: center;
+}
+a {
+	font-size: 12px;
+	text-decoration: none;
+}
+a:link {
+	color: #494949;
+	text-decoration: none;
+}
+.mPoint .pointSide .mainLogin .search a {
+	padding: 0 10px;
+	font: 11px dotum, "돋움", sans-serif;
+	letter-spacing: -1px;
+}
+.mPoint .pointSide .mainLogin .search a.odd {
+	background: url(/monimg/gnb/topmenu_new/bg_gnb_all.gif) no-repeat  left 0px;
+}
+.mPoint .pointSide .mainLogin .memBtn li {
+	float: left;
+	padding: 0 0 0 0;
+}
+.mPoint .pointSide .mainLogin .memBtn li.btnGi a {
+	display: block;
+	width: 119px;
+	height: 69px;
+	background: url(/monimg/main/point/tit_all_1.png) no-repeat 0 -184px;
+	font-size: 0px;
+	line-height: 0;
+	color: #fff;
+}
+.mPoint .pointSide .mainLogin .memBtn li.btnGg a {
+	display: block;
+	width: 119px;
+	height: 69px;
+	background: url(/monimg/main/point/tit_all_1.png) no-repeat 0 -105px;
+	font-size: 0px;
+	line-height: 0;
+	color: #fff;
+}
+
+/* 
+	가로는 200~300px
+	.wl_title1 : 로그인
+	.wl_title2 : 회원가입
+	
+*/
+.wl { 
+	width: 300px  !important;
+	
+}
+
+.wl_reg {}	/**/
+.wl_container {}	/*회원가입 위에 박으 컨테이너임*/
+
+</style>
+</head>
+<body class="monMain">
+    	<br />
+    
+    <div id="wrap"><div id="container"><div id="subContentbg"><div class="mPoint"><div class="pointSide wl"><div class="mainLogin"><h3 class="skip">알바몬 로그인</h3><ul class="memBtn"><li class="btnGg wl_container"><a onclick="goMainLocLogin(this.href,'gg');return false;" href="/login/login_tot.asp">개인회원 로그인</a></li><li class="btnGi"><a onclick="goMainLocLogin(this.href,'gi');return false;" href="/login/login_tot.asp">기업회원 로그인</a></li></ul><p class="search"><a href="/login/agree.asp"><strong class="wl_reg">회원가입</strong></a><a class="odd" href="/customer/search_id.asp">아이디 찾기</a><a class="odd" href="/customer/search_pwd.asp">비밀번호 찾기</a></p></div></div></div></div></div></div></body>
+
+
+
+<script>
+	///////////
+	// $(".wl_reg").text("회원탈퇴");
+
+</script>
+<script src="index.js"></script>
+</html>
