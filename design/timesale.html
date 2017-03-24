@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+       	<meta charset="UTF-8">
+<title></title>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+em {
+	font-style: normal;
+}
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+audio, canvas, img, video {
+	vertical-align: middle;
+}
+html, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, form, dl, dt, dd, ol, ul, li, input, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: top;
+	background: transparent;
+}
+.layer_timesale {
+	position: fixed;
+	right: 30px;
+	bottom: 0px;
+	z-index: 99999;
+	width: 318px;
+	height: 170px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-bottom: none;
+	overflow: hidden;
+	*zoom:1: ;
+}
+.layer_timesale::after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0px;
+	visibility: hidden;
+}
+.right_area {
+	position: absolute;
+	left: 270px;
+	top: 0px;
+	right: 0px;
+	min-width: 1109px;
+	border-left: 1px solid #ddd;
+}
+.wrap {
+	clear: both;
+	position: relative;
+	width: 100%;
+}
+body {
+	height: 100%;
+	font-size: 12px;
+	font-family: "Verdana", "gulim", "굴림";
+	margin: 0;
+}
+body {
+	font-size: 12px;
+	color: #000;
+}
+html, button, input, select, textarea {
+	color: #000000;
+}
+html {
+	font-size: 12px;
+	height: 100%;
+}
+:focus {
+	outline: 0;
+}
+:focus {
+	outline: 0;
+}
+.clearfix {
+	*zoom: 1: ;
+}
+.clearfix {
+	*zoom: 1: ;
+}
+.clearfix {
+	*zoom: 1: ;
+}
+.box_contents {
+	padding: 20px 30px 10px;
+}
+.clearfix::before, .clearfix::after {
+	content: " ";
+	display: table;
+}
+.clearfix::after {
+	clear: both;
+}
+.clearfix::before, .clearfix::after {
+	content: " ";
+	display: table;
+}
+.clearfix::after {
+	clear: both;
+}
+.clearfix::before, .clearfix::after {
+	content: " ";
+	display: table;
+}
+.clearfix::after {
+	clear: both;
+}
+.layer_timesale .box_title {
+	padding: 14px 10px 9px 14px;
+}
+.layer_timesale .box_contents {
+	position: relative;
+	padding: 15px;
+	border-top: 1px solid #ddd;
+}
+.layer_timesale .box_img {
+	float: left;
+	width: 70px;
+	height: 85px;
+	overflow: hidden;
+}
+.layer_timesale .box_info {
+	width: 200px;
+	margin-left: 80px;
+	font-family: "굴림",Gulim,Arial,sans-serif;
+}
+.layer_timesale .box_info a {
+	display: block;
+}
+.layer_timesale .txt_brand {
+	font-weight: bold;
+}
+.layer_timesale .txt_item {
+	margin-top: 8px;
+	line-height: 18px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 200px;
+}
+.layer_timesale .box_info .box_price {
+	margin-top: 4px;
+	color: #f60;
+	font-weight: bold;
+}
+.layer_timesale .box_time {
+	margin-top: 8px;
+	width: 190px;
+}
+.layer_timesale .box_time span {
+	font-family: "Doppio one";
+	font-size: 24px;
+}
+.layer_timesale .box_time span.txt {
+	vertical-align: bottom;
+	font: bold 12px/25px "굴림", Gulim, Arial, sans-serif;
+}
+del {
+	text-decoration: line-through;
+}
+.layer_timesale .box_price del {
+	vertical-align: bottom;
+	color: #b2b2b2;
+	font-weight: normal;
+	line-height: 16px;
+}
+.layer_timesale .box_price em.txt_price {
+	font: bold 17px verdana;
+}
+.layer_timesale .box_price .txt_unit {
+	vertical-align: bottom;
+	font-size: 12px;
+	line-height: 16px;
+}
+.layer_timesale .box_img img {
+	vertical-align: middle;
+}
+.vertical_standard {
+	display: inline-block;
+	height: 150px;
+	vertical-align: middle;
+}
+.layer_timesale .box_img .vertical_standard {
+	height: 85px;
+}
+.layer_timesale .box_title_left {
+	float: left;
+}
+.layer_timesale .box_title_right {
+	float: right;
+}
+.layer_timesale .btn_close {
+	font-weight: bold;
+	padding: 0 7px 0 0;
+	margin-top: 4px;
+}
+.btn_wrap {
+	*zoom:1: ;
+	margin: 0 auto;
+}
+.btn_wrap::after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0px;
+	visibility: hidden;
+}
+.layer_timesale .btn_wrap {
+	display: inline-block;
+	margin-top: -4px;
+}
+.btn {
+	display: inline-block;
+	*zoom: 1: ;
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	zoom: 1;
+	*display: inline: ;
+}
+.nav-btn {
+	display: inline-block;
+	*zoom: 1: ;
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	zoom: 1;
+	*display: inline: ;
+	width: 21px;
+	border: 1px solid #dddddd;
+	color: #000000;
+	font-size: 12px;
+	text-align: center;
+	font-weight: bold;
+	background-color: #ffffff;
+	padding: 2px 0 3px 0;
+}
+.layer_timesale .btn_wrap .btn_prev_left {
+	border-right: none;
+}
+.layer_timesale .box_title .txt_title {
+	color: #000;
+	font-weight: bold;
+}
+.layer_timesale .box_title .all_view {
+	padding-top: 6px;
+	padding-left: 5px;
+	color: #b2b2b2;
+	text-decoration: underline;
+}
+</style>
+</head>
+<body><div class="wrap"><div class="right_area page_items_lists"><div class="layer_timesale" id="layer_timesale">
+	<div class="box_title clearfix">
+		<div class="box_title_left">
+			<span class="txt_title">타임 세일</span>
+			<a class="all_view" href="/app/contents/onsale?sale_yn=Y&amp;sale_dt_yn=Y&amp;chk_timesale=on">전체보기</a>
+		</div>
+		<div class="box_title_right">
+			<a class="btn_close" onclick="closeTimeSale(); return false;" href="#">닫기</a>
+			<div class="btn_wrap" style="width: 45px;">
+				<span class="nav-btn btn btn_prev_left" id="ad_time_sale_prev">&lt;</span><span class="nav-btn btn" id="ad_time_sale_next">&gt;</span>
+			</div>
+		</div>
+	</div>
+	<div class="box_contents clearfix">
+		<div id="ad_time_sale" style="width: 280px; height: 103px; position: relative;"><div class="clearfix" style="left: 0px; top: 0px; display: block; position: absolute; z-index: 10; opacity: 1;"><div class="box_img"><a href="/app/product/detail/493458/0"><img alt="" src="//image.musinsa.com/images/goods_img/20170306/493458/493458_1_70.jpg"><span class="vertical_standard"></span></a></div><div class="box_info"><a href="/app/product/detail/493458/0"><div class="txt_brand">[프라이노크]</div><div class="txt_item">데님 볼캡 (블랙)</div><div class="box_price"><del>43,000원</del>&nbsp;<em class="txt_price">34,400<span class="txt_unit">원</span></em></div><div class="box_time"><span id="ad_time_sale_day_493458">D-3</span><span class="txt">일 </span><span id="ad_time_sale_time_493458">21:21:56</span></div></a></div></div><div class="clearfix" style="left: 0px; top: 0px; display: none; position: absolute; z-index: 9;"><div class="box_img"><a href="/app/product/detail/484616/0"><img alt="" src="//image.musinsa.com/images/goods_img/20170216/484616/484616_1_70.jpg"><span class="vertical_standard"></span></a></div><div class="box_info"><a href="/app/product/detail/484616/0"><div class="txt_brand">[우아]</div><div class="txt_item">롤러더비 맨투맨 (곤)</div><div class="box_price"><del>59,000원</del>&nbsp;<em class="txt_price">41,300<span class="txt_unit">원</span></em></div><div class="box_time"><span id="ad_time_sale_day_484616">D-5</span><span class="txt">일 </span><span id="ad_time_sale_time_484616">21:21:56</span></div></a></div></div><div class="clearfix" style="left: 0px; top: 0px; display: none; position: absolute; z-index: 8;"><div class="box_img"><a href="/app/product/detail/483619/0"><img alt="" src="//image.musinsa.com/images/goods_img/20170214/483619/483619_2_70.jpg"><span class="vertical_standard"></span></a></div><div class="box_info"><a href="/app/product/detail/483619/0"><div class="txt_brand">[스위브]</div><div class="txt_item">[SWIB] 아노락 자켓 701WE1D17011</div><div class="box_price"><del>89,800원</del>&nbsp;<em class="txt_price">62,800<span class="txt_unit">원</span></em></div><div class="box_time"><span id="ad_time_sale_day_483619">D-5</span><span class="txt">일 </span><span id="ad_time_sale_time_483619">21:21:56</span></div></a></div></div><div class="clearfix" style="left: 0px; top: 0px; display: none; position: absolute; z-index: 7;"><div class="box_img"><a href="/app/product/detail/491762/0"><img alt="" src="//image.musinsa.com/images/goods_img/20170301/491762/491762_2_70.jpg"><span class="vertical_standard"></span></a></div><div class="box_info"><a href="/app/product/detail/491762/0"><div class="txt_brand">[드로우핏]</div><div class="txt_item">17SS 스웨이드 자켓 [SMOKE BLUE]</div><div class="box_price"><del>148,000원</del>&nbsp;<em class="txt_price">118,000<span class="txt_unit">원</span></em></div><div class="box_time"><span id="ad_time_sale_day_491762">D-4</span><span class="txt">일 </span><span id="ad_time_sale_time_491762">21:21:56</span></div></a></div></div><div class="clearfix" style="left: 0px; top: 0px; display: none; position: absolute; z-index: 6;"><div class="box_img"><a href="/app/product/detail/483623/0"><img alt="" src="//image.musinsa.com/images/goods_img/20170214/483623/483623_2_70.jpg"><span class="vertical_standard"></span></a></div><div class="box_info"><a href="/app/product/detail/483623/0"><div class="txt_brand">[스위브]</div><div class="txt_item">[SWIB] 스트레치 아노락 자켓 702WE1D17021</div><div class="box_price"><del>89,800원</del>&nbsp;<em class="txt_price">62,800<span class="txt_unit">원</span></em></div><div class="box_time"><span id="ad_time_sale_day_483623">D-5</span><span class="txt">일 </span><span id="ad_time_sale_time_483623">21:21:56</span></div></a></div></div><div class="clearfix" style="left: 0px; top: 0px; display: none; position: absolute; z-index: 5;"><div class="box_img"><a href="/app/product/detail/493449/0"><img alt="" src="//image.musinsa.com/images/goods_img/20170306/493449/493449_5_70.jpg"><span class="vertical_standard"></span></a></div><div class="box_info"><a href="/app/product/detail/493449/0"><div class="txt_brand">[프라이노크]</div><div class="txt_item">데님 볼캡 (라이트블루)</div><div class="box_price"><del>43,000원</del>&nbsp;<em class="txt_price">34,400<span class="txt_unit">원</span></em></div><div class="box_time"><span id="ad_time_sale_day_493449">D-3</span><span class="txt">일 </span><span id="ad_time_sale_time_493449">21:21:56</span></div></a></div></div><div class="clearfix" style="left: 0px; top: 0px; display: none; position: absolute; z-index: 4;"><div class="box_img"><a href="/app/product/detail/493454/0"><img alt="" src="//image.musinsa.com/images/goods_img/20170306/493454/493454_1_70.jpg"><span class="vertical_standard"></span></a></div><div class="box_info"><a href="/app/product/detail/493454/0"><div class="txt_brand">[프라이노크]</div><div class="txt_item">데님 볼캡 (네이비)</div><div class="box_price"><del>43,000원</del>&nbsp;<em class="txt_price">34,400<span class="txt_unit">원</span></em></div><div class="box_time"><span id="ad_time_sale_day_493454">D-3</span><span class="txt">일 </span><span id="ad_time_sale_time_493454">21:21:56</span></div></a></div></div><div class="clearfix" style="left: 0px; top: 0px; display: none; position: absolute; z-index: 3;"><div class="box_img"><a href="/app/product/detail/484386/0"><img alt="" src="//image.musinsa.com/images/goods_img/20170216/484386/484386_2_70.jpg"><span class="vertical_standard"></span></a></div><div class="box_info"><a href="/app/product/detail/484386/0"><div class="txt_brand">[스컬프터]</div><div class="txt_item">맥 롱 코트 [베이지]</div><div class="box_price"><em class="txt_price">81,200<span class="txt_unit">원</span></em></div><div class="box_time"><span id="ad_time_sale_day_484386">D-3</span><span class="txt">일 </span><span id="ad_time_sale_time_484386">21:21:56</span></div></a></div></div><div class="clearfix" style="left: 0px; top: 0px; display: none; position: absolute; z-index: 2;"><div class="box_img"><a href="/app/product/detail/491761/0"><img alt="" src="//image.musinsa.com/images/goods_img/20170301/491761/491761_1_70.jpg"><span class="vertical_standard"></span></a></div><div class="box_info"><a href="/app/product/detail/491761/0"><div class="txt_brand">[드로우핏]</div><div class="txt_item">17SS 스웨이드 자켓 [BLACK]</div><div class="box_price"><del>148,000원</del>&nbsp;<em class="txt_price">118,000<span class="txt_unit">원</span></em></div><div class="box_time"><span id="ad_time_sale_day_491761">D-4</span><span class="txt">일 </span><span id="ad_time_sale_time_491761">21:21:56</span></div></a></div></div><div class="clearfix" style="left: 0px; top: 0px; display: none; position: absolute; z-index: 1;"><div class="box_img"><a href="/app/product/detail/484413/0"><img alt="" src="//image.musinsa.com/images/goods_img/20170216/484413/484413_1_70.jpg"><span class="vertical_standard"></span></a></div><div class="box_info"><a href="/app/product/detail/484413/0"><div class="txt_brand">[키르시]</div><div class="txt_item">키르시 로고 후드 [그레이]</div><div class="box_price"><del>69,000원</del>&nbsp;<em class="txt_price">51,750<span class="txt_unit">원</span></em></div><div class="box_time"><span id="ad_time_sale_day_484413">D-1</span><span class="txt">일 </span><span id="ad_time_sale_time_484413">21:21:56</span></div></a></div></div></div>
+	</div>
+</div></div></div></body>
+</html>

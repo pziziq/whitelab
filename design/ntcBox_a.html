@@ -1,0 +1,562 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ko" lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    	<meta charset="UTF-8">
+<title></title>
+<style>
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	padding: 0;
+	margin: 0;
+}
+.mPoint .pointMain {
+	float: left;
+	width: 710px;
+}
+.mPoint {
+	*zoom:1: ;
+}
+.mPoint::after {
+	display: block;
+	clear: both;
+	content: ".";
+	font-size: 0px;
+}
+#container #subContentbg::after {
+	content: ".";
+	display: block;
+	height: 0px;
+	clear: both;
+	visibility: hidden;
+}
+#wrap {
+	width: 100%;
+}
+.monMain #wrap {
+	background: url(/monimg/main/point/bg_brand_wrap.gif) repeat-x 0 560px;
+}
+body {
+	font: 12px gulim, "굴림", dotum, "돋움", arial, sans-serif;
+	color: #494949;
+}
+html {
+	_overflow-y: scroll;
+	_overflow-x: auto;
+	height: 100%;
+}
+.mPoint .pointMain .pTop {
+	overflow: hidden;
+}
+.mPoint .pointMain .pMid {
+	clear: both;
+	height: 18px;
+	padding: 10px 10px 8px 10px;
+	border: 1px solid #ddd;
+	border-bottom: 2px solid #aaa;
+	background: #fafafa;
+}
+.mPoint .pointMain .pBot {
+	overflow: hidden;
+	border: 1px solid #ddd;
+	border-top: none;
+}
+.mPoint .pointMain .pBot .pointAreaWrap {
+	float: left;
+	width: 295px;
+	height: 153px;
+}
+.mPoint .pointMain .pBot .pointSpecWrap {
+	float: left;
+	width: 205px;
+	height: 153px;
+	border-left: 1px solid #ddd;
+}
+.mPoint .pointMain .pBot .pointDayWrap {
+	float: left;
+	width: 206px;
+	height: 153px;
+	border-left: 1px solid #ddd;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-size: 100%;
+}
+.mPoint .pointMain .pBot .pointDayWrap h3 {
+	padding: 10px 0 0 0;
+	border-bottom: 1px solid #eeeeef;
+	font: 16px "맑은고딕", "Malgun Gothic", Dotum, "돋움", sans-serif;
+	text-align: center;
+}
+.mPoint .pointMain .pBot .pointDayWrap .pointDay {
+	height: 109px;
+}
+.mPoint .pointMain .pBot .pointDayWrap .bDay {
+	display: none;
+}
+.mPoint .pointMain .pBot .pointDayWrap .sDay {
+	display: block;
+}
+.mPoint .pointMain .pBot .pointDayWrap .pointDay .subject {
+	height: 26px;
+	padding: 17px 0 0 110px;
+	color: #757575;
+	font: 11px dotum, "돋움", gulim, "굴림", sans-serif;
+	letter-spacing: -1px;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	empty-cells: show;
+	font-size: 12px;
+}
+.mPoint .pointMain .pBot .pointDayWrap .pointDay table {
+	position: relative;
+	width: 201px;
+	margin: 0 0 0 10px;
+}
+address, caption, em {
+	font-weight: normal;
+	font-style: normal;
+}
+.mPoint .pointMain .pBot .pointDayWrap .pointDay table td {
+	padding: 3px 8px 3px 3px;
+	text-align: center;
+}
+.mPoint .pointMain .pBot .pointDayWrap .pointDay table td {
+	font: 15px dotum, "돋움", sans-serif;
+}
+a {
+	font-size: 12px;
+	text-decoration: none;
+}
+a:link {
+	color: #494949;
+	text-decoration: none;
+}
+.mPoint .pointMain .pBot .pointDayWrap .pointDay table td span {
+	color: #000;
+	font: bold 13px verdana, dotum, "돋움", sans-serif;
+	text-decoration: underline;
+}
+.mPoint .pointMain .pBot .pointDayWrap .pointDay table td em {
+	color: #ff7300;
+	font: bold 13px verdana, dotum, "돋움", sans-serif;
+	text-decoration: underline;
+}
+.mPoint .pointMain .pBot .pointDayWrap .pointDay table th {
+	padding: 12px 8px 4px 3px;
+	color: #4b4f55;
+	font: 14px "맑은고딕", "Malgun Gothic", Dotum, "돋움", sans-serif;
+	background: url(/monimg/main/point/icon_today_1.png) no-repeat center -70px;
+}
+.mPoint .pointMain .pBot .pointDayWrap .pointDay table th.today {
+	background: none;
+}
+.mPoint .pointMain .pBot .pointDayWrap .pointDay table th span {
+	font-weight: normal;
+}
+.mPoint .pointMain .pBot .pointDayWrap .pointDay table th .odd {
+	position: absolute;
+	top: -25px;
+	left: -20px;
+	width: 105px;
+	height: 34px;
+	background: url(/monimg/main/point/icon_today_1.png) no-repeat 0 0;
+	text-indent: -9999em;
+}
+#accessibility, .skip, legend, .blind {
+	overflow: hidden;
+	position: absolute;
+	top: -5000em;
+	visibility: hidden;
+	width: 1px;
+	height: 1px;
+	line-height: 0;
+	font-size: 0px;
+}
+img {
+	border: 0;
+	vertical-align: top;
+}
+.mPoint .pointMain .pBot .pointDayWrap h3 a {
+	display: inline-block;
+	width: 61px;
+	height: 25px;
+	margin-bottom: -1px;
+	background: #fff url(/monimg/main/point/tit_all_1.png) no-repeat 0 -70px;
+	text-indent: -9999em;
+}
+.mPoint .pointMain .pBot .pointSpecWrap h3 {
+	padding: 10px 0 0 0;
+	border-bottom: 1px solid #eeeeef;
+	font: 16px "맑은고딕", "Malgun Gothic", Dotum, "돋움", sans-serif;
+	text-align: center;
+}
+.mPoint .pointMain .pBot .pointSpecWrap .pointSpec {
+	padding: 12px 10px 10px 17px;
+}
+.mPoint .pointMain .pBot .pointSpecWrap .pointSpec.tvc {
+	padding: 15px 0 0 10px;
+}
+ol, ul, li {
+	list-style: none;
+}
+.mPoint .pointMain .pBot .pointSpecWrap .pointSpec ul li {
+	float: left;
+}
+.mPoint .pointMain .pBot .pointSpecWrap .pointSpec ul li a {
+	display: block;
+	width: 55px;
+	height: 40px;
+	padding: 63px 0 0 0;
+	font: 11px dotum, "돋움", gulim, "굴림", sans-serif;
+	background: url(/monimg/main/point/icon_spec_1.gif) no-repeat  0 0;
+	text-align: center;
+	color: #757575;
+}
+.mPoint .pointMain .pBot .pointSpecWrap .pointSpec ul li a.a3 {
+	background-position: -120px 0;
+}
+.mPoint .pointMain .pBot .pointSpecWrap .pointSpec ul li a.a2 {
+	width: 60px;
+	background-position: -60px 0;
+}
+.mPoint .pointMain .pBot .pointSpecWrap .pointSpec ul li a.a1 {
+	width: 60px;
+	background-position: 0 0;
+}
+.mPoint .pointMain .pBot .pointSpecWrap .pointSpec.tvc ul li a {
+	background: url(/monimg/event/2017tvc/main/icon_spec_1.gif) no-repeat 0 0;
+	word-break: keep-all;
+}
+.mPoint .pointMain .pBot .pointSpecWrap .pointSpec.tvc ul li a.a3 {
+	width: 52px;
+	background-position: -123px 0;
+	margin-left: 5px;
+}
+.mPoint .pointMain .pBot .pointSpecWrap .pointSpec.tvc ul li a.a2 {
+	width: 61px;
+	background-position: -57px 0;
+}
+.mPoint .pointMain .pBot .pointSpecWrap .pointSpec.tvc ul li a.a1 {
+	width: 62px;
+	background-position: 5px 0;
+}
+.mPoint .pointMain .pBot .pointSpecWrap h3 a {
+	display: inline-block;
+	width: 87px;
+	height: 25px;
+	margin-bottom: -1px;
+	background: #fff url(/monimg/main/point/tit_all_1.png) no-repeat 0 -35px;
+	text-indent: -9999em;
+}
+.mPoint .pointMain .pBot .pointAreaWrap h3 {
+	padding: 10px 0 0 0;
+	border-bottom: 1px solid #eeeeef;
+	font: 16px "맑은고딕", "Malgun Gothic", Dotum, "돋움", sans-serif;
+	text-align: center;
+}
+.mPoint .pointMain .pBot .pointAreaWrap .pointArea {
+	padding: 15px 0 10px 8px;
+}
+.mPoint .pointMain .pBot .pointAreaWrap .pointArea .area {
+	overflow: hidden;
+}
+.mPoint .pointMain .pBot .pointAreaWrap .pointArea .etcArea {
+	overflow: hidden;
+	margin-left: -7px;
+	padding: 5px 0 0 0;
+}
+.mPoint .pointMain .pBot .pointAreaWrap .pointArea .etcArea li {
+	float: left;
+	width: auto;
+	margin-left: 16px;
+}
+.mPoint .pointMain .pBot .pointAreaWrap .pointArea .etcArea li a {
+	display: block;
+	height: 25px;
+	font: 14px "맑은고딕", "Malgun Gothic", Dotum, "돋움", sans-serif;
+	background: url(/monimg/main/point/icon_area_2.gif) no-repeat  0 0;
+}
+.mPoint .pointMain .pBot .pointAreaWrap .pointArea .etcArea li a.a3 {
+	padding: 3px 0 3px 22px;
+	background-position: 0 -77px;
+}
+.mPoint .pointMain .pBot .pointAreaWrap .pointArea .etcArea li a.a2 {
+	padding: 3px 0 3px 30px;
+	background-position: 0 -38px;
+}
+.mPoint .pointMain .pBot .pointAreaWrap .pointArea .etcArea li a.a1 {
+	padding: 3px 0 3px 30px;
+	background-position: 0 1px;
+}
+.mPoint .pointMain .pBot .pointAreaWrap .pointArea .area li {
+	float: left;
+	width: 29px;
+	height: 19px;
+	padding: 0 9px;
+	background: url(/monimg/main/point/bg_point_all_1.png) no-repeat right -36px;
+}
+.mPoint .pointMain .pBot .pointAreaWrap .pointArea .area li.end {
+	background: none;
+	padding: 0 0 0 8px;
+}
+a:visited {
+	color: #494949;
+	text-decoration: none;
+}
+.mPoint .pointMain .pBot .pointAreaWrap h3 a {
+	display: inline-block;
+	width: 81px;
+	height: 25px;
+	margin-bottom: -1px;
+	background: #fff url(/monimg/main/point/tit_all_1.png) no-repeat 0 0;
+	text-indent: -9999em;
+}
+.mPoint .pointMain .pMid .news {
+	float: left;
+}
+.mPoint .pointMain .pMid .link {
+	float: right;
+}
+.mPoint .pointMain .pMid .link li {
+	float: left;
+	padding: 0 7px 0 7px;
+	background: url(/monimg/gnb/topmenu_new/bg_gnb_all.gif) no-repeat left 4px;
+}
+.mPoint .pointMain .pMid .link li.first {
+	background: none;
+}
+.mPoint .pointMain .pMid .link li a {
+	font: 12px "맑은고딕", "Malgun Gothic", Dotum, "돋움", sans-serif;
+	color: #858585;
+}
+.mPoint .pointMain .pMid .news h3 {
+	float: left;
+	padding: 0 10px 2px 6px;
+}
+.mPoint .pointMain .pMid .news .newList {
+	float: left;
+	width: 250px;
+}
+.mPoint .pointMain .pMid .news .newList ul {
+	float: left;
+}
+.mPoint .pointMain .pMid .news .newList ul li {
+	overflow: hidden;
+	height: 16px;
+}
+.mPoint .pointMain .pMid .news .newList ul li a {
+	font: 12px "맑은고딕", "Malgun Gothic", Dotum, "돋움", sans-serif;
+	color: #858585;
+	word-break: break-word;
+	word-break: break-all;
+	line-height: 1.3;
+}
+.mPoint .pointMain .pTop .bl_3 {
+	float: left;
+}
+.mPoint .pointMain .pTop .bl_4 {
+	float: right;
+	width: 205px;
+	height: 110px;
+}
+.mPoint .pointMain .pTop .bl_4 .listBnr {
+	overflow: hidden;
+	position: relative;
+}
+.mPoint .pointMain .pTop .bl_4 .listBnr ul {
+	overflow: hidden;
+	width: 205px;
+}
+.mPoint .pointMain .pTop .bl_4 .listBnr ul li {
+	float: left;
+	width: 205px;
+}
+.mPoint .pointMain .pTop .bl_4 .listBnr ul li a {
+	display: block;
+	width: 205px;
+	height: 110px;
+	text-indent: -9999em;
+}
+.mPoint .pointMain .pTop .bl_4 .listBnr ul li .bnr4 {
+	background: url(/monimg/main/point/banner_mobile_s4.png) no-repeat 0 0;
+}
+</style>
+</head>
+<body class="monMain"><div id="wrap"><div id="container"><div id="subContentbg"><div class="mPoint"><div class="pointMain">
+        <!--// 알바몬 알림판 -->
+
+<div class="pMid ">
+    <div class="news">
+        <h3><img alt="공지" src="http://contents.albamon.kr/monimg/gnb/topMenu_new/icon_notice_1.gif"></h3>
+        <div class="newList" id="dev_mainNotice" style="height: 16px; overflow: hidden; position: relative;">
+            <ul style="margin: 0px; padding: 0px; position: absolute;">
+                        <li style="margin: 0px; padding: 0px; height: 16px;" reg_group="0"><a href="/service/company/notice_read.asp?B_No=2191" target="_top">체크카드,통장,비밀번호 양도하면 안돼요!</a></li>
+                        
+                        
+            </ul>
+        </div>
+        <script src="/Scripts/js/jq/jquery.vticker.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            var vTickerlist;
+            var NotShowMemFlag = "2";
+            $.get('/Main/Login/getMemTypeCode', function (result) {
+                //기업 C, 개인 M, 비로그인 N
+                if (result) {
+                    if ($.trim(result) == "C") {
+                        NotShowMemFlag = "1";
+                    }
+
+                    if ($.trim(result) != "N") {    //비로그인은 모두다 노출
+                        $("#dev_mainNotice ul li[reg_group=" + NotShowMemFlag + "]").each(function () {
+                            $(this).remove();
+                        });
+                    }
+
+                    vTickerlist = $('#dev_mainNotice').find("a");
+                    $('#dev_mainNotice').vTicker({
+                        // 스크롤 속도(default: 700)
+                        speed: 500,
+                        // 스크롤 사이의 대기시간(default: 4000)
+                        pause: 3000,
+                        // 스크롤 애니메이션
+                        animation: 'fade',
+                        // 마우스 over 일때 멈출 설정
+                        mousePause: true,
+                        // 한번에 보일 리스트수(default: 2)
+                        showItems: 1,
+                        // 스크롤 컨테이너 높이(default: 0)
+                        height: 0,
+                        // 아이템이 움직이는 방향, up/down (default: up)
+                        direction: 'up'
+                    });
+
+                    $(vTickerlist).focus(function () { $('#dev_mainNotice').vTicker('pause', true); });
+                    $(vTickerlist).blur(function () { $('#dev_mainNotice').vTicker('pause', false); });
+                }
+            });
+          
+			function vTickerPause(isPause){
+				$('#dev_mainNotice').vTicker('pause', isPause);
+			}
+        </script>
+
+    </div>
+    <ul class="link">
+        <li class="first"><a href="/service/company/notice_list.asp">전체소식</a></li>
+        <li><a href="/service/company/notice_list.asp?NoticeType=5">신규서비스</a></li>
+        <li><a href="/service/company/notice_list.asp?NoticeType=2">이벤트</a></li>
+        <li><a href="/service/company/notice_list.asp?NoticeType=4">당첨자발표</a></li>
+    </ul>
+</div>
+
+        <!-- 지역별/모바일/A+/ 하루알바 -->
+
+<div class="pBot">
+    <div class="pointAreaWrap">
+        <h3><a href="/list/gi/mon_area.asp">지역별 알바</a></h3>
+        <div class="pointArea">
+            <ul class="area">
+                <li><a href="/list/gi/mon_area.asp?scd=I000&amp;gcd=I000">서울</a></li>
+                <li><a href="/list/gi/mon_area.asp?scd=B000&amp;gcd=B000">경기</a></li>
+                <li><a href="/list/gi/mon_area.asp?scd=K000&amp;gcd=K000">인천</a></li>
+                <li><a href="/list/gi/mon_area.asp?scd=A000&amp;gcd=A000">강원</a></li>
+                <li><a href="/list/gi/mon_area.asp?scd=G000">대전</a></li>
+                <li class="end"><a href="/list/gi/mon_area.asp?scd=1000&amp;gcd=1000">세종</a></li>
+                <li><a href="/list/gi/mon_area.asp?scd=O000&amp;gcd=O000">충남</a></li>
+                <li><a href="/list/gi/mon_area.asp?scd=P000&amp;gcd=P000">충북</a></li>
+                <li><a href="/list/gi/mon_area.asp?scd=H000&amp;gcd=H000">부산</a></li>
+                <li><a href="/list/gi/mon_area.asp?scd=J000&amp;gcd=J000">울산</a></li>
+                <li><a href="/list/gi/mon_area.asp?scd=C000&amp;gcd=C000">경남</a></li>
+                <li class="end"><a href="/list/gi/mon_area.asp?scd=D000&amp;gcd=D000">경북</a></li>
+                <li><a href="/list/gi/mon_area.asp?scd=F000&amp;gcd=F000">대구</a></li>
+                <li><a href="/list/gi/mon_area.asp?scd=E000&amp;gcd=E000">광주</a></li>
+                <li><a href="/list/gi/mon_area.asp?scd=L000&amp;gcd=L000">전남</a></li>
+                <li><a href="/list/gi/mon_area.asp?scd=M000&amp;gcd=M000">전북</a></li>
+                <li><a href="/list/gi/mon_area.asp?scd=N000&amp;gcd=N000">제주</a></li>
+                <li class="end"><a href="/list/gi/mon_area.asp?scd=Q000&amp;gcd=Q000">전국</a></li>
+            </ul>
+            <ul class="etcArea">
+                <li><a class="a1" href="/list/gi/mon_subway.asp">역세권</a></li>
+                <li><a class="a2" href="/list/gi/mon_univ.asp">대학가</a></li>
+                <li><a class="a3" href="/list/gi/mon_gi_map.asp">지도알바</a></li>
+            </ul>
+        </div>
+    </div>
+
+<!--// 스펙A+ 알바 -->
+    <div class="pointSpecWrap">
+        <h3><a href="/spec/add_gi_list.asp">스펙UP 알바</a></h3>
+        <div class="pointSpec tvc">
+            <ul>
+                <li><a class="a1" href="/spec/add_gi_list.asp">취업가산점 알바</a></li>
+                <li><a class="a2" href="/spec/taste_gi_list.asp">직무경험 알바</a></li>
+                <li><a class="a3" href="/spec/ability_gi_list.asp">능력활용 알바</a></li>
+            </ul>
+        </div>
+    </div>
+
+<!--// 하루알바 -->
+    <div class="pointDayWrap">
+        <h3><a href="/list/gi/mon_icon_list.asp?itype=12&ShortType=B">하루알바</a></h3>
+        <!--// 큰사이즈 -->
+        <div class="pointDay bDay">
+            <p class="subject"><span>하루 반짝 일하는 알바를 <strong>날짜별</strong>로 찾아보세요!</span></p>
+            <table summary="이표는 요일 건수 항목을 포함하고 있습니다">
+                <caption><span class="skip">하루알바</span></caption>
+                <colgroup>
+                    <col width="25%">
+                    <col width="25%">
+                    <col width="25%">
+                    <col width="25%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th class="today" scope="col"><span class="odd"><img alt="today" src="http://contents.albamon.kr/monimg/main/point/icon_today_1.png"></span>3/24(금)</th>
+                        <th scope="col">3/25(토)</th>
+                        <th scope="col">3/26(일)</th>
+                        <th scope="col">3/27(월)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="/list/gi/mon_icon_list.asp?itype=12&amp;lvtype=1&amp;ShortType=B&amp;HaruDate=2017-03-24"><em>231</em></a>건</td>
+                        <td><a href="/list/gi/mon_icon_list.asp?itype=12&amp;lvtype=1&amp;ShortType=B&amp;HaruDate=2017-03-25"><span>240</span></a>건</td>
+                        <td><a href="/list/gi/mon_icon_list.asp?itype=12&amp;lvtype=1&amp;ShortType=B&amp;HaruDate=2017-03-26"><span>65</span></a>건</td>
+                        <td><a href="/list/gi/mon_icon_list.asp?itype=12&amp;lvtype=1&amp;ShortType=B&amp;HaruDate=2017-03-27"><span>108</span></a>건</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--// 작은사이즈 -->
+        <div class="pointDay sDay">
+            <p class="subject"><span class="skip">하루 반짝 일하는 알바를 <strong>날짜별</strong>로 찾아보세요!</span></p>
+            <table summary="이표는 요일 건수 항목을 포함하고 있습니다">
+                <caption><span class="skip">하루알바</span></caption>
+                <colgroup>
+                    <col width="34%">
+                    <col width="33%">
+                    <col width="33%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th class="today" scope="col"><span class="odd">today</span>3/24(금)</th>
+                        <th scope="col">3/25(토)</th>
+                        <th scope="col">3/26(일)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="/list/gi/mon_icon_list.asp?itype=12&amp;lvtype=1&amp;ShortType=B&amp;HaruDate=2017-03-24"><em>231</em></a>건</td>
+                        <td><a href="/list/gi/mon_icon_list.asp?itype=12&amp;lvtype=1&amp;ShortType=B&amp;HaruDate=2017-03-25"><span>240</span></a>건</td>
+                        <td><a href="/list/gi/mon_icon_list.asp?itype=12&amp;lvtype=1&amp;ShortType=B&amp;HaruDate=2017-03-26"><span>65</span></a>건</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+    </div></div></div></div></div></body>
+</html>

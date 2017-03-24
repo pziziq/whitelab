@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ko" lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+        	<meta charset="UTF-8">
+<title></title>
+<style>
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	padding: 0;
+	margin: 0;
+}
+#container #subContentbg::after {
+	content: ".";
+	display: block;
+	height: 0px;
+	clear: both;
+	visibility: hidden;
+}
+#wrap {
+	width: 100%;
+}
+.monMain #wrap {
+	background: url(/monimg/main/point/bg_brand_wrap.gif) repeat-x 0 560px;
+}
+body {
+	font: 12px gulim, "굴림", dotum, "돋움", arial, sans-serif;
+	color: #494949;
+}
+html {
+	_overflow-y: scroll;
+	_overflow-x: auto;
+	height: 100%;
+}
+.mainBot .mainTalk {
+	position: relative;
+	float: left;
+	width: 252px;
+}
+.mainBot .mainResearch {
+	float: left;
+	width: 258px;
+}
+.mainBot .mainContest {
+	position: relative;
+	float: left;
+	width: 190px;
+	margin-right: 10px;
+}
+.mainBot .mainPay {
+	float: left;
+	width: 246px;
+	height: 260px;
+	border: 2px solid #dee7eb;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-size: 100%;
+}
+#accessibility, .skip, legend, .blind {
+	overflow: hidden;
+	position: absolute;
+	top: -5000em;
+	visibility: hidden;
+	width: 1px;
+	height: 1px;
+	line-height: 0;
+	font-size: 0px;
+}
+.mainBot .mainPay .tit {
+	padding: 10px 0 0 0;
+}
+.mainBot .mainPay .payWrap {
+	margin: 0 12px 0 12px;
+}
+.mainBot .mainPay .tip {
+	padding: 10px 0 25px 10px;
+	font: 11px dotum, "돋움", sans-serif;
+	letter-spacing: -1px;
+	line-height: 140%;
+	color: #777;
+}
+.mainBot .mainPay .tip span {
+	display: block;
+	padding: 0 0 0 7px;
+}
+a {
+	font-size: 12px;
+	text-decoration: none;
+}
+a:link {
+	color: #494949;
+	text-decoration: none;
+}
+.mainBot .mainPay .tip span a {
+	font: 11px dotum, "돋움", sans-serif;
+	color: #0196ff;
+	text-decoration: underline;
+}
+.mainBot .mainPay .payWrap .day {
+	padding: 0 0 3px;
+	border-bottom: 3px solid #a1a1a1;
+	color: #777;
+	font: 11px dotum, "돋움", gulim, "굴림", sans-serif;
+	letter-spacing: -1px;
+	text-align: right;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	empty-cells: show;
+	font-size: 12px;
+}
+.mainBot .mainPay .payWrap table {
+	width: 100%;
+}
+address, caption, em {
+	font-weight: normal;
+	font-style: normal;
+}
+.mainBot .mainPay .payWrap table th {
+	padding: 4px 0 4px 0;
+	border-bottom: 1px solid #bdc2c6;
+	font-weight: normal;
+	background: #f2faff;
+}
+.mainBot .mainPay .payWrap table td {
+	padding: 4px 10px 4px 3px;
+	border-bottom: 1px solid #bdc2c6;
+	border-left: 1px solid #bdc2c6;
+	text-align: right;
+	font: 12px verdana, dotum, "돋움", sans-serif;
+}
+.mainBot .mainPay .tit span {
+	display: block;
+	width: 245px;
+	height: 100px;
+	background: url(/monimg/main/pay_title_1_1.png) no-repeat 0 -5px;
+	text-indent: -9999em;
+}
+.mainBot .mainContest h3 {
+	height: 33px;
+	padding: 17px 0 0 15px;
+	background: #5dba7d;
+}
+.mainBot .mainContest .contest {
+	height: 198px;
+	padding: 15px 0 0 10px;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.mainBot .mainContest .btn {
+	position: absolute;
+	top: 11px;
+	right: 10px;
+}
+.mainBot .mainContest .btn a {
+	display: block;
+	width: 29px;
+	height: 29px;
+	background: url(/monimg/main/icon_main_all_1.png) no-repeat -29px -140px;
+	text-indent: -9999em;
+}
+img {
+	border: 0;
+	vertical-align: top;
+}
+.mainBot .mainResearch h3 {
+	height: 33px;
+	padding: 17px 0 0 15px;
+	background: #7f72d8;
+}
+.mainBot .mainResearch .research {
+	height: 178px;
+	padding: 25px 10px 10px 10px;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.mainBot .mainResearch .research dl {
+	position: relative;
+	height: 55px;
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid #ddd;
+}
+.mainBot .mainResearch .research .news {
+	padding: 15px 0 7px 0;
+	font-weight: bold;
+	color: #7f72d8;
+}
+ol, ul, li {
+	list-style: none;
+}
+.mainBot .mainResearch .research ul li {
+	overflow: hidden;
+	height: 14px;
+	margin-bottom: 4px;
+	padding: 4px 0 0 15px;
+	background: url(/monimg/main/icon_main_spot_1.png) no-repeat 5px -92px;
+}
+.mainBot .mainResearch .research dl dt {
+	width: 175px;
+	padding: 0 0 10px 0;
+	font: bold 14px dotum, "돋움", sans-serif;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.mainBot .mainResearch .research dl.none dt {
+	width: auto;
+}
+.mainBot .mainTalk h3 {
+	height: 33px;
+	padding: 17px 0 0 15px;
+	background: #2ea4f7;
+}
+.mainBot .mainTalk ul {
+	height: 188px;
+	padding: 25px 10px 0 10px;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.mainBot .mainTalk .btn {
+	position: absolute;
+	top: 11px;
+	right: 10px;
+}
+.mainBot .mainTalk .btn a {
+	display: block;
+	width: 29px;
+	height: 29px;
+	background: url(/monimg/main/icon_main_all_1.png) no-repeat 0 -140px;
+	text-indent: -9999em;
+}
+.mainBot .mainTalk ul li {
+	height: 43px;
+}
+.mainBot .mainTalk ul li dl {
+	padding: 0 0 0 10px;
+	background: url(/monimg/main/icon_main_spot_1.png) no-repeat 0 -55px;
+}
+.mainBot .mainTalk ul li dl {
+	height: 43px;
+}
+.mainBot .mainTalk ul li dl dd {
+	padding: 3px 0 0 0;
+	font: 11px dotum, "돋움", sans-serif;
+	color: #929292;
+}
+</style>
+</head>
+<body class="monMain"><div id="wrap"><div id="container"><div id="subContentbg"><div class="mainBot">
+    <!--// 화재만발 토크 -->
+<div class="mainTalk">
+    <h3><img alt="화제만발 토크" src="http://contents.albamon.kr/monimg/main/talk_title_1.gif"></h3>
+    <ul id="ul_talk">
+                <li>
+                    <dl>
+                        <dt><a href="/community/alba/view-exp/245604">불법  체류자 신고 합시다</a></dt>
+                        <dd class="tit"> 진짜파생초보 | 2017-03-22 </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><a href="/community/alba/view-exp/245964">자살하고싶어요</a></dt>
+                        <dd class="tit"> 상무지구 | 2017-03-24 </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><a href="/community/alba/view-exp/243343">동물병원 직원으로 일하게됬는데요</a></dt>
+                        <dd class="tit"> 모모 | 2017-03-13 </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><a href="/community/alba/view-exp/243710">여자들만 일하는 </a></dt>
+                        <dd class="tit"> 2iuhh | 2017-03-14 </dd>
+                    </dl>
+                </li>
+    </ul>
+    <p class="btn"><a href="/talk/alba/tb_list.asp?B_Case=1">화제만발 토크 더보기</a></p>
+</div>
+
+
+
+
+    <!--// 알바 리서치 -->
+
+<div class="mainResearch">
+    <h3><img alt="알바리서치" src="http://contents.albamon.kr/monimg/main/research_title_1.gif"></h3>
+    <div class="research">
+            <dl class="none">
+                <dt><img alt="진행중인 설문이 없습니다" src="http://contents.albamon.kr/monimg/main/research_none.gif"></dt>
+                <dd></dd>
+                <dd></dd>
+            </dl>
+
+        <p class="news">리서치 관련뉴스</p>
+        <ul>
+
+                    <li><a href="http://www.jobkorea.co.kr/goodjob/news/View?News_No=11827" target="_blank">3월 대학생 42%는 장기알바 구직 중!</a></li>
+                    <li><a href="http://www.jobkorea.co.kr/goodjob/news/View?News_No=11825" target="_blank">대학생 2명 중 1명, 단기 알바 선호!</a></li>
+                    <li><a href="http://www.jobkorea.co.kr/goodjob/news/View?News_No=11810" target="_blank">알바생 40%, 알바 중 아까운 비용? '교통비'</a></li>
+
+        </ul>
+    </div>
+</div>
+
+
+    <!--// 추천공모전 -->
+    <div class="mainContest">
+        <h3><img alt="추천공모전" src="http://contents.albamon.kr/monimg/main/contest_title_1.gif"></h3>
+        <div class="contest">
+            <iframe name="Camp1" width="170" height="180" title="추천공모전" id="Camp1" src="http://contest.albamon.com/OutLink/Albamon_Main" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <p class="btn"><a href="http://contest.albamon.com/" target="_blank">추천공모전 더보기</a></p>
+    </div>
+
+</div></div></div></div></body>
+</html>
