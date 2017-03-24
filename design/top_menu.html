@@ -1,13 +1,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xml:lang="ko" lang="ko" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta charset="UTF-8">
+	   	<meta charset="UTF-8">
 <title></title>
 <style>
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
 	padding: 0;
 	margin: 0;
 }
+/*
+.gnbWrap {
+	height: 33px;
+	border-bottom: 1px solid #eaeaea;
+	background: #fafafa;
+}
+*/
 #header {
 	width: 100%;
 	margin-bottom: 13px;
@@ -28,6 +35,7 @@ html {
 	height: 100%;
 }
 .lnbWrap .logArea {
+	float: left;
 	display: inline-block;
 	padding: 6px 15px 0 0;
 	line-height: 1.7;
@@ -78,7 +86,7 @@ img {
 }
 </style>
 </head>
-<body class="monMain"><div class="gnbWrap"><div class="gnbTop"><div class="lnbWrap">
+<body class="monMain"><div id="wrap"><div id="header"><div class="gnbWrap"><div class="gnbTop"><div class="lnbWrap">
             <span class="logArea">
                     <a onclick="goMainLocLogin(this.href,'/,');return false;" href="/login/login_tot.asp"><img alt="로그인" src="http://contents.albamon.kr/monimg/gnb/topMenu_new/btn_login_1.gif"></a> <a href="/login/agree.asp" target="_top"><img alt="회원가입" src="http://contents.albamon.kr/monimg/gnb/topMenu_new/btn_join_1.gif"></a>
             </span>
@@ -91,5 +99,5 @@ img {
                         <a href="http://www.albamon.com/service/sns/main.asp" target="_blank">SNS</a>
                     </li>
                             </ul>
-        </div></div></div></body>
+        </div></div></div></div></div></body>
 </html>
